@@ -82,6 +82,7 @@ section.landing
                 letter-spacing: 2px
                 transition: .5s
                 text-decoration: none
+                text-align: center
                 &:first-child
                     background-color: $main-color
                     &:hover
@@ -93,6 +94,27 @@ section.landing
                     &:hover
                         background-color: $main-color
                         border-color: transparent
+
+@media (max-width: 991.98px)
+    section.landing
+        img
+            max-width: 250px !important
+        h1
+            font-size: 25px !important
+            text-align: center !important
+        div
+            &:first-of-type
+                width: 261.19px !important
+                p
+                    font-size: 18px !important
+                span
+                    font-size: 18px !important
+                    border-bottom: 2px solid $main-color !important
+            &:last-child
+                width: fit-content !important
+                height: 110px
+                flex-direction: column !important
+                justify-content: space-between !important
 
 nav
     width: 100%
@@ -232,6 +254,12 @@ section.about
                 justify-content: center !important
                 margin-block-end: 20px !important
                 padding-inline-end: 0 !important
+                div
+                    max-width: 95% !important
             &:last-child
                 align-items: center !important
                 padding-inline-start: 0 !important
+                p
+                    max-width: 95% !important
+                    &:first-child
+                        text-align: center
