@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,500&display=swap')
+
+$main-color: #03C4EB
+
+*
+    box-sizing: border-box !important
+    margin: 0
+    padding: 0
+    outline: none
+    font-family: 'Raleway', sans-serif
+
+body
+    background-color: #EEE !important
+
+::-webkit-scrollbar
+    width: 10px
+
+::-webkit-scrollbar-thumb
+    background-color: $main-color
+    height: 67px
+
+::-webkit-scrollbar-track
+    background-color: #EEE
+
+section.landing
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: url('imgs/hero-bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    color: #E4E6EB
+    overflow: hidden
+    &::before
+        content: ''
+        width: 100%
+        height: 100vh
+        position: absolute
+        filter: opacity(.8)
+        background-color: #000
+    img
+        position: relative
+        margin-block-end: 20px
+    h1
+        position: relative
+        font-size: 35px
+        font-weight: 700 !important
+        margin: 0
+        padding: 0
+        margin-block-end: 10px
+    div
+        position: relative
+        margin: 0
+        padding: 0
+        &:first-of-type
+            width: 370.3px
+            display: flex
+            margin-block-end: 50px
+            p
+                font-size: 25px
+                font-weight: 500
+                font-style: italic
+                margin: 0
+                padding: 0
+                color: #B0B3B8
+            span
+                font-size: 25px
+                font-weight: 500
+                font-style: italic
+                border-bottom: 3px solid $main-color
+        &:last-child
+            width: 562.56px
+            display: flex
+            justify-content: space-around
+            a
+                padding: 10px 20px
+                border: 2px solid transparent
+                color: #E4E6EB
+                letter-spacing: 2px
+                transition: .5s
+                text-decoration: none
+                &:first-child
+                    background-color: $main-color
+                    &:hover
+                        background-color: transparent
+                        border-color: #E4E6EB
+                &:last-child
+                    background-color: transparent
+                    border-color: #E4E6EB
+                    &:hover
+                        background-color: $main-color
+                        border-color: transparent
+
+nav
+    width: 100%
+    height: 70px
+    position: sticky
+    top: 0
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 0
+    padding: 0
+    background-color: #0d0d0d
+    z-index: 9999
+    transition: .3s
+    overflow: hidden
+    a
+        img
+            max-width: 150px
+            margin: 0
+            padding: 0
+    ul
+        width: 50%
+        height: max-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+            margin: 0
+            padding: 0
+            a
+                color: #E4E6EB
+                text-decoration: none
+                margin: 0
+                padding: 0
+                transition: .5s
+                &:hover
+                    color: $main-color
+
+section.about
+    position: relative
+    width: 100%
+    margin: 0
+    padding: 0
+    padding-block-start: 70px
+    padding-block-end: 70px
+    overflow: hidden
+    div
+        margin: 0
+        padding: 0
+        &:first-child
+            margin-block-end: 50px
+            p
+                position: relative
+                display: block
+                width: fit-content
+                padding: 0
+                margin: 0 auto
+                &:first-child
+                    font-size: 32px
+                    font-weight: 700
+                    color: #111
+                    margin-block-end: 20px
+                    cursor: default
+                    z-index: 9998
+                    transition: .5s
+                    &::before
+                        content: ''
+                        position: absolute
+                        display: block
+                        width: 50px
+                        height: 5px
+                        bottom: 0
+                        left: calc( 50% - 25px )
+                        background-color: $main-color
+                        transition: .5s
+                        z-index: -1
+                    &:hover
+                        color: #E4E6EB
+                        &::before
+                            width: 110%
+                            left: -5%
+                            height: 48px
+                &:last-child
+                    color: #666
+                    font-style: italic
+                    letter-spacing: 1.5px
+        &:nth-child(2)
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            padding-inline-end: 15px
+            div
+                max-width: 85%
+                overflow: hidden
+                transition: .5s
+                margin: 0
+                padding: 0 !important
+                &:hover
+                    img
+                        filter: grayscale(0)
+                        transform: scale(1.05)
+                img
+                    max-width: 100%
+                    filter: grayscale(.7)
+                    transition: .5s
+        &:last-child
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-inline-start: 15px
+            p
+                max-width: 85%
+                line-height: 26px
+                &:first-child
+                    font-size: 28px
+                    font-weight: 700
+                    color: #333
+                    cursor: default
+                &:nth-child(2), &:nth-child(3), &:last-child
+                    font-style: italic
+                    color: #666
+                &:last-child
+                    margin: 0
+                    padding: 0
+
+@media (max-width: 991.98px)
+    section.about
+        div
+            &:first-child
+                p
+                    &:last-child
+                        text-align: center
+            &:nth-child(2)
+                justify-content: center !important
+                margin-block-end: 20px !important
+                padding-inline-end: 0 !important
+            &:last-child
+                align-items: center !important
+                padding-inline-start: 0 !important
