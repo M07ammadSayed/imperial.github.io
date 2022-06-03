@@ -392,7 +392,7 @@ section.services
                     &:last-child
                         text-align: center
             &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
-                width: 75% !important
+                width: 90% !important
                 display: flex !important
                 flex-direction: column !important
                 align-items: center !important
@@ -420,6 +420,8 @@ section.subscribe
     align-items: center
     div
         p
+            margin: 0
+            padding: 0
             &:first-child
                 width: fit-content
                 font-size: 28px
@@ -430,6 +432,7 @@ section.subscribe
                 color: #E4E6EB
                 cursor: default
             &:last-child
+                width: fit-content
                 font-weight: 500
                 font-style: italic
                 width: 85%
@@ -445,3 +448,18 @@ section.subscribe
         &:hover
             background-color: $main-color
             border-color: transparent
+
+@media (max-width: 767.98px)
+    section.subscribe
+        flex-direction: column
+        justify-content: center
+        div
+            p
+                text-align: center
+                &:first-child
+                    font-size: 22px !important
+                    margin: 0 auto !important
+                    margin-block-end: 20px !important
+                &:last-child
+                    margin: 0 auto !important
+                    margin-block-end: 50px !important

@@ -620,7 +620,7 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
     text-align: center;
   }
   section.services div:nth-child(2), section.services div:nth-child(3), section.services div:nth-child(4), section.services div:nth-child(5), section.services div:nth-child(6), section.services div:nth-child(7) {
-    width: 75% !important;
+    width: 90% !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -669,6 +669,11 @@ section.subscribe {
           align-items: center;
 }
 
+section.subscribe div p {
+  margin: 0;
+  padding: 0;
+}
+
 section.subscribe div p:first-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -685,6 +690,9 @@ section.subscribe div p:first-child {
 }
 
 section.subscribe div p:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 500;
   font-style: italic;
   width: 85%;
@@ -705,5 +713,31 @@ section.subscribe a {
 section.subscribe a:hover {
   background-color: #03C4EB;
   border-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+  section.subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.subscribe div p {
+    text-align: center;
+  }
+  section.subscribe div p:first-child {
+    font-size: 22px !important;
+    margin: 0 auto !important;
+    -webkit-margin-after: 20px !important;
+            margin-block-end: 20px !important;
+  }
+  section.subscribe div p:last-child {
+    margin: 0 auto !important;
+    -webkit-margin-after: 50px !important;
+            margin-block-end: 50px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

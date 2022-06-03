@@ -21,7 +21,7 @@ window.onscroll = function () {
 
 wow = new WOW(
     {
-        offset: 150
+        offset: 100
     }
 )
 wow.init();
