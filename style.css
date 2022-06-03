@@ -146,14 +146,14 @@ section.landing div:last-child a:last-child:hover {
 
 @media (max-width: 991.98px) {
   section.landing img {
-    max-width: 250px !important;
+    max-width: 300px !important;
   }
   section.landing h1 {
     font-size: 25px !important;
     text-align: center !important;
   }
   section.landing div:first-of-type {
-    width: 261.19px !important;
+    width: 266.63px !important;
   }
   section.landing div:first-of-type p {
     font-size: 18px !important;
@@ -248,10 +248,10 @@ section.about {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-padding-before: 70px;
-          padding-block-start: 70px;
-  -webkit-padding-after: 70px;
-          padding-block-end: 70px;
+  -webkit-padding-before: 75px;
+          padding-block-start: 75px;
+  -webkit-padding-after: 75px;
+          padding-block-end: 75px;
   overflow: hidden;
 }
 
@@ -419,6 +419,188 @@ section.about div:last-child p:last-child {
     max-width: 95% !important;
   }
   section.about div:last-child p:first-child {
+    text-align: center;
+  }
+}
+
+section.services {
+  position: relative;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("imgs/services-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("imgs/services-bg.jpg") fixed center center;
+  background-size: cover;
+  -webkit-padding-before: 75px;
+          padding-block-start: 75px;
+  -webkit-padding-after: 75px;
+          padding-block-end: 75px;
+  margin: 0;
+  overflow: hidden;
+}
+
+section.services div {
+  margin: 0;
+  padding: 0;
+}
+
+section.services div:first-child {
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+
+section.services div:first-child p {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section.services div:first-child p:first-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  cursor: default;
+  z-index: 9998;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.services div:first-child p:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 5px;
+  bottom: 0;
+  left: calc( 50% - 25px);
+  background-color: #03C4EB;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+section.services div:first-child p:first-child:hover {
+  color: #E4E6EB;
+}
+
+section.services div:first-child p:first-child:hover::before {
+  width: 110%;
+  left: -5%;
+  height: 48px;
+}
+
+section.services div:first-child p:last-child {
+  color: #666;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+section.services div:nth-child(2), section.services div:nth-child(3), section.services div:nth-child(4) {
+  padding: 0 50px 50px;
+}
+
+section.services div:nth-child(5), section.services div:nth-child(6), section.services div:nth-child(7) {
+  padding: 50px 50px 0;
+}
+
+section.services div:nth-child(2):hover div div, section.services div:nth-child(3):hover div div, section.services div:nth-child(4):hover div div, section.services div:nth-child(5):hover div div, section.services div:nth-child(6):hover div div, section.services div:nth-child(7):hover div div {
+  background-color: #EEE;
+  border: 1px solid #03C4EB;
+}
+
+section.services div:nth-child(2):hover div div svg, section.services div:nth-child(3):hover div div svg, section.services div:nth-child(4):hover div div svg, section.services div:nth-child(5):hover div div svg, section.services div:nth-child(6):hover div div svg, section.services div:nth-child(7):hover div div svg {
+  color: #03C4EB;
+}
+
+section.services div:nth-child(2) div, section.services div:nth-child(3) div, section.services div:nth-child(4) div, section.services div:nth-child(5) div, section.services div:nth-child(6) div, section.services div:nth-child(7) div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.services div:nth-child(2) div div, section.services div:nth-child(3) div div, section.services div:nth-child(4) div div, section.services div:nth-child(5) div div, section.services div:nth-child(6) div div, section.services div:nth-child(7) div div {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  background-color: #03C4EB;
+  border-radius: 50%;
+  padding: 15px;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  border: 1px solid transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.services div:nth-child(2) div div svg, section.services div:nth-child(3) div div svg, section.services div:nth-child(4) div div svg, section.services div:nth-child(5) div div svg, section.services div:nth-child(6) div div svg, section.services div:nth-child(7) div div svg {
+  width: 24px;
+  height: 24px;
+  color: #E4E6EB;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.services div:nth-child(2) div p, section.services div:nth-child(3) div p, section.services div:nth-child(4) div p, section.services div:nth-child(5) div p, section.services div:nth-child(6) div p, section.services div:nth-child(7) div p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111 !important;
+  letter-spacing: 1px !important;
+  font-style: normal !important;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
+  color: #666;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+
+@media (max-width: 767.98px) {
+  section.services div:first-child p:last-child {
+    text-align: center;
+  }
+  section.services div:nth-child(2), section.services div:nth-child(3), section.services div:nth-child(4), section.services div:nth-child(5), section.services div:nth-child(6), section.services div:nth-child(7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.services div:nth-child(2) div, section.services div:nth-child(3) div, section.services div:nth-child(4) div, section.services div:nth-child(5) div, section.services div:nth-child(6) div, section.services div:nth-child(7) div {
+    width: 100% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
+    max-width: 80%;
     text-align: center;
   }
 }

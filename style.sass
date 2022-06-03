@@ -98,13 +98,13 @@ section.landing
 @media (max-width: 991.98px)
     section.landing
         img
-            max-width: 250px !important
+            max-width: 300px !important
         h1
             font-size: 25px !important
             text-align: center !important
         div
             &:first-of-type
-                width: 261.19px !important
+                width: 266.63px !important
                 p
                     font-size: 18px !important
                 span
@@ -161,8 +161,8 @@ section.about
     width: 100%
     margin: 0
     padding: 0
-    padding-block-start: 70px
-    padding-block-end: 70px
+    padding-block-start: 75px
+    padding-block-end: 75px
     overflow: hidden
     div
         margin: 0
@@ -263,3 +263,118 @@ section.about
                     max-width: 95% !important
                     &:first-child
                         text-align: center
+
+section.services
+    position: relative
+    width: 100%
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("imgs/services-bg.jpg") fixed center center
+    background-size: cover
+    padding-block-start: 75px
+    padding-block-end: 75px
+    margin: 0
+    overflow: hidden
+    div
+        margin: 0
+        padding: 0
+        &:first-child
+            margin-block-end: 50px
+            p
+                position: relative
+                display: block
+                width: fit-content
+                padding: 0
+                margin: 0 auto
+                &:first-child
+                    font-size: 32px
+                    font-weight: 700
+                    color: #111
+                    margin-block-end: 20px
+                    cursor: default
+                    z-index: 9998
+                    transition: .5s
+                    &::before
+                        content: ''
+                        position: absolute
+                        display: block
+                        width: 50px
+                        height: 5px
+                        bottom: 0
+                        left: calc( 50% - 25px )
+                        background-color: $main-color
+                        transition: .5s
+                        z-index: -1
+                    &:hover
+                        color: #E4E6EB
+                        &::before
+                            width: 110%
+                            left: -5%
+                            height: 48px
+                &:last-child
+                    color: #666
+                    font-style: italic
+                    letter-spacing: 1.5px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4)
+            padding: 0 50px 50px
+        &:nth-child(5),&:nth-child(6), &:nth-child(7)
+            padding: 50px 50px 0
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
+            &:hover
+                div
+                    div
+                        background-color: #EEE
+                        border: 1px solid $main-color
+                        svg
+                            color: $main-color
+            div
+                width: fit-content
+                height: fit-content
+                margin: 0
+                padding: 0
+                display: flex
+                align-items: center
+                div
+                    width: fit-content !important
+                    height: fit-content !important
+                    background-color: $main-color
+                    border-radius: 50%
+                    padding: 15px
+                    margin-inline-end: 15px
+                    border: 1px solid transparent
+                    transition: .5s
+                    svg
+                        width: 24px
+                        height: 24px
+                        color: #E4E6EB
+                        transition: .5s
+                p
+                    font-size: 24px
+                    font-weight: 700
+                    color: #111 !important
+                    letter-spacing: 1px !important
+                    font-style: normal !important
+                    margin: 0
+                    padding: 0
+                    cursor: default
+            p
+                color: #666
+                margin: 0
+                padding: 0
+                margin-block-start: 15px
+
+@media (max-width: 767.98px)
+    section.services
+        div
+            &:first-child
+                p
+                    &:last-child
+                        text-align: center
+            &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
+                display: flex
+                flex-direction: column
+                align-items: center
+                div
+                    width: 100% !important
+                    justify-content: center
+                p
+                    max-width: 80%
+                    text-align: center
