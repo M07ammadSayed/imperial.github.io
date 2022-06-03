@@ -148,6 +148,35 @@ section.landing div:last-child a:last-child:hover {
 }
 
 @media (max-width: 991.98px) {
+  section.landing h1 {
+    font-size: 25px !important;
+    text-align: center !important;
+  }
+  section.landing div:first-of-type {
+    width: 266.63px !important;
+  }
+  section.landing div:first-of-type p {
+    font-size: 18px !important;
+  }
+  section.landing div:first-of-type span {
+    font-size: 18px !important;
+  }
+  section.landing div:last-child {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    height: 110px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 767.98px) {
   section.landing img {
     max-width: 300px !important;
   }
@@ -438,6 +467,12 @@ section.services {
           padding-block-end: 75px;
   margin: 0;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.services div {
@@ -585,30 +620,90 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
     text-align: center;
   }
   section.services div:nth-child(2), section.services div:nth-child(3), section.services div:nth-child(4), section.services div:nth-child(5), section.services div:nth-child(6), section.services div:nth-child(7) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    width: 75% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin: 0 auto !important;
   }
   section.services div:nth-child(2) div, section.services div:nth-child(3) div, section.services div:nth-child(4) div, section.services div:nth-child(5) div, section.services div:nth-child(6) div, section.services div:nth-child(7) div {
     width: 100% !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
   section.services div:nth-child(2) div p, section.services div:nth-child(3) div p, section.services div:nth-child(4) div p, section.services div:nth-child(5) div p, section.services div:nth-child(6) div p, section.services div:nth-child(7) div p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
-  section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    text-align: center;
-  }
+}
+
+section.subscribe {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-padding-before: 75px;
+          padding-block-start: 75px;
+  -webkit-padding-after: 75px;
+          padding-block-end: 75px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(imgs/subscribe-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/subscribe-bg.jpg) fixed center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.subscribe div p:first-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 28px;
+  font-weight: 700;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  border-bottom: 3px solid #03C4EB;
+  -webkit-padding-after: 5px;
+          padding-block-end: 5px;
+  color: #E4E6EB;
+  cursor: default;
+}
+
+section.subscribe div p:last-child {
+  font-weight: 500;
+  font-style: italic;
+  width: 85%;
+  color: #B0B3B8;
+}
+
+section.subscribe a {
+  padding: 10px 20px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  letter-spacing: 2px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+  text-align: center;
+}
+
+section.subscribe a:hover {
+  background-color: #03C4EB;
+  border-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
