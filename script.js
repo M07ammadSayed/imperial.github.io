@@ -6,7 +6,7 @@ let typed = new Typed("#typing", {
     startDelay: 1000,
     fadeOut: false,
     fadeIn: false,
-    loop: false,
+    loop: true,
     showCursor: true,
     autoInsertCss: false
 });

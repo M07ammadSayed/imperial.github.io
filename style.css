@@ -149,17 +149,17 @@ section.landing div:last-child a:last-child:hover {
     max-width: 300px !important;
   }
   section.landing h1 {
-    font-size: 25px !important;
+    font-size: 20px !important;
     text-align: center !important;
   }
   section.landing div:first-of-type {
-    width: 266.63px !important;
+    width: 237.61px !important;
   }
   section.landing div:first-of-type p {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   section.landing div:first-of-type span {
-    font-size: 18px !important;
+    font-size: 16px !important;
     border-bottom: 2px solid #03C4EB !important;
   }
   section.landing div:last-child {
@@ -599,8 +599,10 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
         -ms-flex-pack: center;
             justify-content: center;
   }
+  section.services div:nth-child(2) div p, section.services div:nth-child(3) div p, section.services div:nth-child(4) div p, section.services div:nth-child(5) div p, section.services div:nth-child(6) div p, section.services div:nth-child(7) div p {
+    font-size: 20px;
+  }
   section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    max-width: 80%;
     text-align: center;
   }
 }
