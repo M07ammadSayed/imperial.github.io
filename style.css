@@ -72,6 +72,7 @@ section.landing h1 {
   padding: 0;
   -webkit-margin-after: 10px;
           margin-block-end: 10px;
+  cursor: default;
 }
 
 section.landing div {
@@ -96,6 +97,7 @@ section.landing div:first-of-type p {
   margin: 0;
   padding: 0;
   color: #B0B3B8;
+  cursor: default;
 }
 
 section.landing div:first-of-type span {
@@ -103,6 +105,7 @@ section.landing div:first-of-type span {
   font-weight: 500;
   font-style: italic;
   border-bottom: 3px solid #03C4EB;
+  cursor: default;
 }
 
 section.landing div:last-child {
@@ -117,7 +120,7 @@ section.landing div:last-child {
 section.landing div:last-child a {
   padding: 10px 20px;
   border: 2px solid transparent;
-  color: #E4E6EB;
+  color: #FFF;
   letter-spacing: 2px;
   -webkit-transition: .5s;
   transition: .5s;

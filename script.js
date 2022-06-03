@@ -19,4 +19,9 @@ window.onscroll = function () {
     }
 };
 
-new WOW().init();
+wow = new WOW(
+    {
+        offset: 200
+    }
+)
+wow.init();
