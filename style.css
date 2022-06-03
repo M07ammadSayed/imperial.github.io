@@ -620,7 +620,7 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
     text-align: center;
   }
   section.services div:nth-child(2), section.services div:nth-child(3), section.services div:nth-child(4), section.services div:nth-child(5), section.services div:nth-child(6), section.services div:nth-child(7) {
-    width: 90% !important;
+    width: 95% !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
