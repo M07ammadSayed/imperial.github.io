@@ -388,7 +388,7 @@ section.services
                 width: fit-content !important
                 margin: 0 !important
                 left: 71px
-                padding-inline-end: 71px
+                padding-right: 71px
 
 @media (max-width: 767.98px)
     section.services
@@ -397,7 +397,10 @@ section.services
                 p
                     &:last-child
                         text-align: center
+            &:nth-child(7)
+                padding-bottom: 0 !important 
             &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
+                padding: 0 15px 50px !important 
                 display: flex !important
                 flex-direction: column !important
                 align-items: center !important
@@ -409,6 +412,9 @@ section.services
                     p
                         width: fit-content !important
                         font-size: 20px !important
+                p
+                    left: 71px !important
+                    padding-right: 15 !important
 
 section.subscribe
     position: relative
