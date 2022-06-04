@@ -149,7 +149,7 @@ nav
     padding: 0
     background-color: #0d0d0d
     z-index: 9999
-    transition: .3s
+    transition: .5s
     overflow: hidden
     a
         img
@@ -285,7 +285,6 @@ section.about
                     &:first-child
                         text-align: center
                         font-size: 22px !important
-                        width: 100% !important
 
 section.services
     position: relative
@@ -339,9 +338,9 @@ section.services
                     font-style: italic
                     letter-spacing: 1.5px
         &:nth-child(2), &:nth-child(3), &:nth-child(4)
-            padding: 0 50px 50px
+            padding: 0 25px 25px
         &:nth-child(5),&:nth-child(6), &:nth-child(7)
-            padding: 50px 50px 0
+            padding: 25px 25px 0
         &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
             &:hover
                 div
@@ -372,18 +371,20 @@ section.services
                         color: #E4E6EB
                         transition: .5s
                 p
+                    width: fit-content !important
                     font-size: 24px
                     font-weight: 700
                     color: #111 !important
                     letter-spacing: 1px !important
                     font-style: normal !important
-                    margin: 0
+                    margin: 0 !important
                     padding: 0
                     cursor: default
             p
                 color: #666
-                margin: 0
                 padding: 0
+                width: calc( 100% - 142px ) !important
+                margin: 0 auto !important
                 margin-block-start: 15px
 
 @media (max-width: 767.98px)
@@ -394,17 +395,16 @@ section.services
                     &:last-child
                         text-align: center
             &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
-                width: 100% !important
                 display: flex !important
                 flex-direction: column !important
                 align-items: center !important
                 padding-left: 15px !important
                 padding-right: 15px !important
-                margin: 0 auto !important
                 div
                     width: 100% !important
                     justify-content: flex-start !important
                     p
+                        width: fit-content !important
                         font-size: 20px !important
 
 section.subscribe
