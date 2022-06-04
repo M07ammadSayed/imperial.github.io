@@ -477,3 +477,124 @@ section.subscribe
                 &:last-child
                     margin: 0 auto !important
                     margin-block-end: 50px !important
+
+section.portfolio
+    position: relative
+    width: 100%
+    padding-block-start: 75px
+    padding-block-end: 75px
+    margin: 0
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-inline-start: 10px !important
+    padding-inline-end: 10px !important
+    background-color: #EEE
+    div.portfolio-header
+        margin: 0
+        padding: 0
+        margin-block-end: 50px
+        p
+            position: relative
+            display: block
+            width: fit-content
+            padding: 0
+            margin: 0 auto
+            &:first-child
+                font-size: 32px
+                font-weight: 700
+                color: #111
+                margin-block-end: 20px
+                cursor: default
+                z-index: 9998
+                transition: .5s
+                &::before
+                    content: ''
+                    position: absolute
+                    display: block
+                    width: 50px
+                    height: 5px
+                    bottom: 0
+                    left: calc( 50% - 25px )
+                    background-color: $main-color
+                    transition: .5s
+                    z-index: -1
+                &:hover
+                    color: #E4E6EB
+                    &::before
+                        width: 110%
+                        left: -5%
+                        height: 48px
+            &:last-child
+                color: #666
+                font-style: italic
+                letter-spacing: 1.5px
+    div.row
+        width: 80%
+        div
+            height: 270px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 0 0 30px
+            &:hover
+                div
+                    opacity: 1
+                    z-index: 9998
+            div
+                width: 100%
+                background-color: rgba(0, 0, 0, .7)
+                z-index: 9998
+                margin: 0
+                padding: 0
+                opacity: 0
+                z-index: -1
+                transition: .5s
+                p
+                    color: #E4E6EB
+                    margin-block-end: 20px !important
+                    font-size: 22px
+                    font-weight: 700
+                    cursor: default
+                div
+                    width: 50%
+                    height: fit-content
+                    background-color: transparent
+                    z-index: 0
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    button
+                        width: fit-content
+                        height: fit-content
+                        background-color: transparent
+                        border: 0
+                        svg
+                            color: $main-color
+                            width: 20px
+                            height: 20px
+            img
+                position: absolute
+                padding: 0 12px
+                width: 360px
+                height: 270px
+    ul
+        width: 20%
+        display: flex
+        justify-content: space-around
+        list-style: none
+        margin: 0 0 50px
+        padding: 0
+        li
+            color: #666
+            font-size: 14px
+            font-weight: 700
+            transition: .5s
+            cursor: pointer
+            &:hover
+                color: $main-color
+
+.active
+    color: $main-color !important

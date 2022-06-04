@@ -764,4 +764,208 @@ section.subscribe a:hover {
             margin-block-end: 50px !important;
   }
 }
+
+section.portfolio {
+  position: relative;
+  width: 100%;
+  -webkit-padding-before: 75px;
+          padding-block-start: 75px;
+  -webkit-padding-after: 75px;
+          padding-block-end: 75px;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 10px !important;
+          padding-inline-start: 10px !important;
+  -webkit-padding-end: 10px !important;
+          padding-inline-end: 10px !important;
+  background-color: #EEE;
+}
+
+section.portfolio div.portfolio-header {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+
+section.portfolio div.portfolio-header p {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section.portfolio div.portfolio-header p:first-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  cursor: default;
+  z-index: 9998;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.portfolio div.portfolio-header p:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 5px;
+  bottom: 0;
+  left: calc( 50% - 25px);
+  background-color: #03C4EB;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+section.portfolio div.portfolio-header p:first-child:hover {
+  color: #E4E6EB;
+}
+
+section.portfolio div.portfolio-header p:first-child:hover::before {
+  width: 110%;
+  left: -5%;
+  height: 48px;
+}
+
+section.portfolio div.portfolio-header p:last-child {
+  color: #666;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+section.portfolio div.row {
+  width: 80%;
+}
+
+section.portfolio div.row div {
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 30px;
+}
+
+section.portfolio div.row div:hover div {
+  opacity: 1;
+  z-index: 9998;
+}
+
+section.portfolio div.row div div {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.portfolio div.row div div p {
+  color: #E4E6EB;
+  -webkit-margin-after: 20px !important;
+          margin-block-end: 20px !important;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: default;
+}
+
+section.portfolio div.row div div div {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.portfolio div.row div div div button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: 0;
+}
+
+section.portfolio div.row div div div button svg {
+  color: #03C4EB;
+  width: 20px;
+  height: 20px;
+}
+
+section.portfolio div.row div img {
+  position: absolute;
+  padding: 0 12px;
+  width: 360px;
+  height: 270px;
+}
+
+section.portfolio ul {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+section.portfolio ul li {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+section.portfolio ul li:hover {
+  color: #03C4EB;
+}
+
+.active {
+  color: #03C4EB !important;
+}
 /*# sourceMappingURL=style.css.map */

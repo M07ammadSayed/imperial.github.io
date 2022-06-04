@@ -19,4 +19,59 @@ window.onscroll = function () {
     }
 };
 
+const navElement = document.querySelectorAll("nav ul li a");
+for (let i = 0; i < navElement.length; i++) {
+    const element = navElement[i];
+    element.onclick = e=> {
+        let n = 0;
+
+        while(n < navElement.length) {
+            navElement[n++].className = "";
+        }
+
+        e.target.className = "active";
+    }
+};
+
+window.onscroll = function() {
+    if (this.scrollY < document.querySelector(".about").offsetTop) {
+        navElement[0].className = "active";
+    }
+
+    if (this.scrollY >= document.querySelector(".about").offsetTop && this.scrollY < document.querySelector(".services").offsetTop) {
+        navElement[0].className = "";
+        navElement[1].className = "active";
+    } else {
+        navElement[1].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".services").offsetTop && this.scrollY < document.querySelector(".portfolio").offsetTop) {
+        navElement[1].className = "";
+        navElement[2].className = "active";
+    } else {
+        navElement[2].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".portfolio").offsetTop) {
+        navElement[2].className = "";
+        navElement[3].className = "active";
+    } else {
+        navElement[3].className = "";
+    }
+};
+
+const portfolioCategory = document.querySelectorAll("section.portfolio ul li");
+for (let i = 0; i < portfolioCategory.length; i++) {
+    const element = portfolioCategory[i];
+    element.onclick = e=> {
+        let n = 0;
+
+        while(n < portfolioCategory.length) {
+            portfolioCategory[n++].className = "";
+        }
+
+        e.target.className = "active";
+    }
+};
+
 new WOW().init();
