@@ -399,7 +399,6 @@ section.services
             &:nth-child(7)
                 padding-bottom: 0 !important 
             &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
-                padding: 0 15px 50px !important 
                 display: flex !important
                 flex-direction: column !important
                 align-items: center !important
@@ -409,13 +408,16 @@ section.services
                     p
                         width: fit-content !important
                         font-size: 20px !important
+            &:nth-child(2), &:nth-child(4), &:nth-child(6)
+                padding: 0 25px 50px 0 !important
+            &:nth-child(3), &:nth-child(5), &:nth-child(7)
+                padding: 0 0 50px 25px !important
 
-// @media (max-width: 767.98px)
-//     section.services
-//         div
-//             &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
-//                 p
-//                     padding-right: 58.25px !important
+@media (max-width: 767.98px)
+    section.services
+        div
+            &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),&:nth-child(6), &:nth-child(7)
+                padding: 0 0 50px !important
 
 section.subscribe
     position: relative
