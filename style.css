@@ -663,7 +663,7 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
 
 @media (max-width: 767.98px) {
   section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    padding: 0 !important;
+    padding-right: 15 !important;
   }
 }
 
