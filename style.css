@@ -474,6 +474,10 @@ section.services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-padding-start: 10px !important;
+          padding-inline-start: 10px !important;
+  -webkit-padding-end: 10px !important;
+          padding-inline-end: 10px !important;
 }
 
 section.services div {
@@ -609,7 +613,6 @@ section.services div:nth-child(2) div p, section.services div:nth-child(3) div p
   margin: 0 !important;
   padding: 0;
   cursor: default;
-  left: 0 !important;
 }
 
 section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
@@ -619,9 +622,7 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
-  margin: 0 !important;
-  left: 71px;
-  padding-right: 53.25px;
+  margin: 0 0 0 72px !important;
 }
 
 @media (max-width: 991.98px) {
@@ -643,8 +644,6 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
   }
   section.services div:nth-child(2) div, section.services div:nth-child(3) div, section.services div:nth-child(4) div, section.services div:nth-child(5) div, section.services div:nth-child(6) div, section.services div:nth-child(7) div {
     width: 100% !important;
@@ -657,16 +656,6 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
     width: -moz-fit-content !important;
     width: fit-content !important;
     font-size: 20px !important;
-    padding: 0 !important;
-  }
-  section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    padding-right: 68.25px !important;
-  }
-}
-
-@media (max-width: 767.98px) {
-  section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    padding-right: 58.25px !important;
   }
 }
 
