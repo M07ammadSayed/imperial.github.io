@@ -662,8 +662,14 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
 }
 
 @media (max-width: 767.98px) {
+  section.services div:nth-child(2) div p, section.services div:nth-child(3) div p, section.services div:nth-child(4) div p, section.services div:nth-child(5) div p, section.services div:nth-child(6) div p, section.services div:nth-child(7) div p {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 0 !important;
+  }
   section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
-    padding-right: 15 !important;
+    padding-right: 15px !important;
   }
 }
 
