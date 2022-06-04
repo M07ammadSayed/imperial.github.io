@@ -625,6 +625,9 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
 }
 
 @media (max-width: 991.98px) {
+  section.services div:first-child p:last-child {
+    text-align: center !important;
+  }
   section.services div:nth-child(7) {
     padding-bottom: 0 !important;
   }
@@ -662,9 +665,6 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
 }
 
 @media (max-width: 767.98px) {
-  section.services div:first-child p:last-child {
-    text-align: center !important;
-  }
   section.services div:nth-child(2) div p, section.services div:nth-child(3) div p, section.services div:nth-child(4) div p, section.services div:nth-child(5) div p, section.services div:nth-child(6) div p, section.services div:nth-child(7) div p {
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
