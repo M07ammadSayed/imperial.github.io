@@ -609,15 +609,20 @@ section.services div:nth-child(2) div p, section.services div:nth-child(3) div p
   margin: 0 !important;
   padding: 0;
   cursor: default;
+  left: 0 !important;
 }
 
 section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
+  position: relative;
   color: #666;
   padding: 0;
-  width: calc( 100% - 142px) !important;
-  margin: 0 auto !important;
-  -webkit-margin-before: 15px;
-          margin-block-start: 15px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0 !important;
+  left: 71px;
+  -webkit-padding-end: 71px;
+          padding-inline-end: 71px;
 }
 
 @media (max-width: 767.98px) {
