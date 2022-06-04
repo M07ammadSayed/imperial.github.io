@@ -12,7 +12,7 @@ let typed = new Typed("#typing", {
 });
 
 window.onscroll = function () {
-    if (this.scrollY === document.querySelector("nav").offsetTop) {
+    if (this.scrollY >= document.querySelector(".about").offsetTop) {
         document.querySelector("nav").style.backgroundColor = "rgba(0, 0, 0, .85)";
     } else {
         document.querySelector("nav").style.backgroundColor = "#0D0D0D";
