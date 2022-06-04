@@ -660,7 +660,7 @@ section.services div:nth-child(2) p, section.services div:nth-child(3) p, sectio
   }
   section.services div:nth-child(2) p, section.services div:nth-child(3) p, section.services div:nth-child(4) p, section.services div:nth-child(5) p, section.services div:nth-child(6) p, section.services div:nth-child(7) p {
     left: 71px !important;
-    padding-right: 61px !important;
+    padding-right: 35.5px !important;
   }
 }
 
