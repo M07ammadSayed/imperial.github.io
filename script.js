@@ -19,9 +19,4 @@ window.onscroll = function () {
     }
 };
 
-wow = new WOW(
-    {
-        offset: 100
-    }
-)
-wow.init();
+new WOW().init();
