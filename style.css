@@ -453,6 +453,7 @@ section.about div:last-child p:last-child {
   section.about div:last-child p:first-child {
     text-align: center;
     font-size: 22px !important;
+    width: 100% !important;
   }
 }
 
