@@ -972,7 +972,7 @@ section.portfolio ul li:hover {
 
 @media (max-width: 991.98px) {
   section.portfolio ul {
-    width: 40% !important;
+    width: 50% !important;
   }
 }
 
@@ -1159,9 +1159,6 @@ section.testimonials div.client-1 div:last-child img:last-child, section.testimo
 }
 
 section.testimonials div.client-1 div:last-child p, section.testimonials div.client-2 div:last-child p {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   display: inline;
   color: #666;
 }
@@ -1189,7 +1186,9 @@ section.testimonials div.client-2 {
             flex-direction: column;
   }
   section.testimonials div.client-1 div:last-child, section.testimonials div.client-2 div:last-child {
-    width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
