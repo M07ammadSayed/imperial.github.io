@@ -1252,6 +1252,7 @@ section.team div.team-members div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 
 section.team div.team-members div div:first-of-type {
@@ -1317,6 +1318,23 @@ section.team div.team-members div p:first-of-type {
 section.team div.team-members div p:last-of-type {
   font-size: 13px;
   color: #666;
+}
+
+@media (max-width: 991.98px) {
+  section.team div.team-header p:last-child {
+    text-align: center !important;
+  }
+  section.team div.team-members div:first-child, section.team div.team-members div:nth-child(2) {
+    -webkit-margin-after: 50px !important;
+            margin-block-end: 50px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.team div.team-members div:first-child, section.team div.team-members div:nth-child(2), section.team div.team-members div:nth-child(3) {
+    -webkit-margin-after: 50px !important;
+            margin-block-end: 50px !important;
+  }
 }
 
 #preloader {
