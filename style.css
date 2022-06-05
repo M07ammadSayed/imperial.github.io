@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: #EEE !important;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #EEE;
+  background-color: #fff;
 }
 
 section.landing {
@@ -280,11 +281,12 @@ section.about {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-padding-before: 75px;
-          padding-block-start: 75px;
-  -webkit-padding-after: 75px;
-          padding-block-end: 75px;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 section.about div {
@@ -462,10 +464,10 @@ section.services {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("imgs/services-bg.jpg") fixed center center;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("imgs/services-bg.jpg") fixed center center;
   background-size: cover;
-  -webkit-padding-before: 75px;
-          padding-block-start: 75px;
-  -webkit-padding-after: 75px;
-          padding-block-end: 75px;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
@@ -675,10 +677,10 @@ section.subscribe {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-padding-before: 75px;
-          padding-block-start: 75px;
-  -webkit-padding-after: 75px;
-          padding-block-end: 75px;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(imgs/subscribe-bg.jpg) fixed center center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/subscribe-bg.jpg) fixed center center;
@@ -768,10 +770,10 @@ section.subscribe a:hover {
 section.portfolio {
   position: relative;
   width: 100%;
-  -webkit-padding-before: 75px;
-          padding-block-start: 75px;
-  -webkit-padding-after: 75px;
-          padding-block-end: 75px;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
@@ -788,7 +790,7 @@ section.portfolio {
           padding-inline-start: 10px !important;
   -webkit-padding-end: 10px !important;
           padding-inline-end: 10px !important;
-  background-color: #EEE;
+  background-color: #fff;
 }
 
 section.portfolio div.portfolio-header {
@@ -878,7 +880,8 @@ section.portfolio div.row div:hover div {
 }
 
 section.portfolio div.row div div {
-  width: 100%;
+  width: 336px;
+  height: 270px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9998;
   margin: 0;
@@ -963,6 +966,368 @@ section.portfolio ul li {
 
 section.portfolio ul li:hover {
   color: #03C4EB;
+}
+
+section.testimonials {
+  position: relative;
+  width: 100%;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 10px !important;
+          padding-inline-start: 10px !important;
+  -webkit-padding-end: 10px !important;
+          padding-inline-end: 10px !important;
+  background-color: #f6f6f6;
+}
+
+section.testimonials div.testimonials-header {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+
+section.testimonials div.testimonials-header p {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section.testimonials div.testimonials-header p:first-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  cursor: default;
+  z-index: 9998;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.testimonials div.testimonials-header p:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 5px;
+  bottom: 0;
+  left: calc( 50% - 25px);
+  background-color: #03C4EB;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+section.testimonials div.testimonials-header p:first-child:hover {
+  color: #E4E6EB;
+}
+
+section.testimonials div.testimonials-header p:first-child:hover::before {
+  width: 110%;
+  left: -5%;
+  height: 48px;
+}
+
+section.testimonials div.testimonials-header p:last-child {
+  color: #666;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+section.testimonials div.client-1, section.testimonials div.client-2 {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.testimonials div.client-1 div:first-child, section.testimonials div.client-2 div:first-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.testimonials div.client-1 div:first-child div, section.testimonials div.client-2 div:first-child div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section.testimonials div.client-1 div:first-child div:hover img, section.testimonials div.client-2 div:first-child div:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section.testimonials div.client-1 div:first-child div img, section.testimonials div.client-2 div:first-child div img {
+  width: 248px;
+  height: 248px;
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.testimonials div.client-1 div:first-child p:first-of-type, section.testimonials div.client-2 div:first-child p:first-of-type {
+  color: #03C4EB;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  cursor: default;
+}
+
+section.testimonials div.client-1 div:first-child p:last-of-type, section.testimonials div.client-2 div:first-child p:last-of-type {
+  color: #333;
+  margin: 0;
+  cursor: default;
+}
+
+section.testimonials div.client-1 div:last-child, section.testimonials div.client-2 div:last-child {
+  width: 810px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+section.testimonials div.client-1 div:last-child img:first-child, section.testimonials div.client-2 div:last-child img:first-child {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+}
+
+section.testimonials div.client-1 div:last-child img:last-child, section.testimonials div.client-2 div:last-child img:last-child {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+  -webkit-padding-before: 15px;
+          padding-block-start: 15px;
+}
+
+section.testimonials div.client-1 div:last-child p, section.testimonials div.client-2 div:last-child p {
+  display: inline;
+  color: #666;
+}
+
+section.testimonials div.client-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section.team {
+  position: relative;
+  width: 100%;
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
+  margin: 0;
+  overflow: hidden;
+  -webkit-padding-start: 10px !important;
+          padding-inline-start: 10px !important;
+  -webkit-padding-end: 10px !important;
+          padding-inline-end: 10px !important;
+  background-color: #fff;
+}
+
+section.team div.team-header {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+
+section.team div.team-header p {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section.team div.team-header p:first-child {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  cursor: default;
+  z-index: 9998;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.team div.team-header p:first-child::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 5px;
+  bottom: 0;
+  left: calc( 50% - 25px);
+  background-color: #03C4EB;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+section.team div.team-header p:first-child:hover {
+  color: #E4E6EB;
+}
+
+section.team div.team-header p:first-child:hover::before {
+  width: 110%;
+  left: -5%;
+  height: 48px;
+}
+
+section.team div.team-header p:last-child {
+  color: #666;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+section.team div.team-members {
+  width: 100%;
+  margin: 0 !important;
+}
+
+section.team div.team-members div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.team div.team-members div div:first-of-type {
+  overflow: hidden;
+  border: 0;
+  border-radius: 20px;
+}
+
+section.team div.team-members div div:first-of-type:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section.team div.team-members div div:first-of-type img {
+  width: 261px;
+  height: 261px;
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.team div.team-members div div:last-of-type {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+}
+
+section.team div.team-members div div:last-of-type a svg {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #666;
+}
+
+section.team div.team-members div div:last-of-type a svg:hover {
+  color: #03C4EB;
+}
+
+section.team div.team-members div p {
+  margin: 0;
+}
+
+section.team div.team-members div p:first-of-type {
+  font-size: 24px;
+  font-weight: 700;
+  color: #03C4EB;
+}
+
+section.team div.team-members div p:last-of-type {
+  font-size: 13px;
+  color: #666;
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url(imgs/preloader.svg) no-repeat center center;
 }
 
 .active {

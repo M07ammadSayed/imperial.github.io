@@ -11,14 +11,6 @@ let typed = new Typed("#typing", {
     autoInsertCss: false
 });
 
-window.onscroll = function () {
-    if (this.scrollY >= document.querySelector(".about").offsetTop) {
-        document.querySelector("nav").style.backgroundColor = "rgba(0, 0, 0, .85)";
-    } else {
-        document.querySelector("nav").style.backgroundColor = "#0D0D0D";
-    }
-};
-
 const navElement = document.querySelectorAll("nav ul li a");
 for (let i = 0; i < navElement.length; i++) {
     const element = navElement[i];
@@ -52,11 +44,18 @@ window.onscroll = function() {
         navElement[2].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".portfolio").offsetTop) {
+    if (this.scrollY >= document.querySelector(".portfolio").offsetTop && this.scrollY < document.querySelector(".testimonials").offsetTop) {
         navElement[2].className = "";
         navElement[3].className = "active";
     } else {
         navElement[3].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".testimonials").offsetTop) {
+        navElement[3].className = "";
+        navElement[4].className = "active";
+    } else {
+        navElement[4].className = "";
     }
 };
 
@@ -71,6 +70,23 @@ for (let i = 0; i < portfolioCategory.length; i++) {
         }
 
         e.target.className = "active";
+    }
+};
+
+let preloader = document.getElementById("preloader");
+if (preloader) {
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.remove();
+        }, 100);
+    });
+};
+
+window.onscroll = function () {
+    if (this.scrollY >= document.querySelector(".about").offsetTop) {
+        document.querySelector("nav").style.backgroundColor = "rgba(0, 0, 0, .85)";
+    } else {
+        document.querySelector("nav").style.backgroundColor = "#0D0D0D";
     }
 };
 
