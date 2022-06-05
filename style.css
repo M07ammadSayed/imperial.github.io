@@ -677,8 +677,8 @@ section.subscribe {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-padding-before: 80px;
-          padding-block-start: 80px;
+  -webkit-padding-before: 60px;
+          padding-block-start: 60px;
   -webkit-padding-after: 60px;
           padding-block-end: 60px;
   overflow: hidden;
@@ -1261,7 +1261,7 @@ section.team div.team-members div {
 section.team div.team-members div div:first-of-type {
   overflow: hidden;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 section.team div.team-members div div:first-of-type:hover img {
@@ -1310,6 +1310,7 @@ section.team div.team-members div div:last-of-type a svg:hover {
 
 section.team div.team-members div p {
   margin: 0;
+  cursor: default;
 }
 
 section.team div.team-members div p:first-of-type {
