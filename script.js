@@ -51,11 +51,31 @@ window.onscroll = function() {
         navElement[3].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".testimonials").offsetTop) {
+    if (this.scrollY >= document.querySelector(".testimonials").offsetTop && this.scrollY < document.querySelector(".team").offsetTop) {
         navElement[3].className = "";
         navElement[4].className = "active";
     } else {
         navElement[4].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".team").offsetTop && this.scrollY < document.querySelector(".contact").offsetTop) {
+        navElement[4].className = "";
+        navElement[5].className = "active";
+    } else {
+        navElement[5].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".contact").offsetTop - 100) {
+        navElement[5].className = "";
+        navElement[6].className = "active";
+    } else {
+        navElement[6].className = "";
+    }
+
+    if (this.scrollY >= document.querySelector(".about").offsetTop) {
+        document.querySelector("nav").style.backgroundColor = "rgba(0, 0, 0, .85)";
+    } else {
+        document.querySelector("nav").style.backgroundColor = "#0D0D0D";
     }
 };
 
@@ -80,14 +100,6 @@ if (preloader) {
             preloader.remove();
         }, 100);
     });
-};
-
-window.onscroll = function () {
-    if (this.scrollY >= document.querySelector(".about").offsetTop) {
-        document.querySelector("nav").style.backgroundColor = "rgba(0, 0, 0, .85)";
-    } else {
-        document.querySelector("nav").style.backgroundColor = "#0D0D0D";
-    }
 };
 
 new WOW().init();
