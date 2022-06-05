@@ -953,7 +953,7 @@ section.portfolio ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  margin: 0 0 50px;
+  margin: 0 auto 30px !important;
   padding: 0;
 }
 
@@ -968,6 +968,12 @@ section.portfolio ul li {
 
 section.portfolio ul li:hover {
   color: #03C4EB;
+}
+
+@media (max-width: 991.98px) {
+  section.portfolio ul {
+    width: 40% !important;
+  }
 }
 
 section.testimonials {
@@ -1182,6 +1188,9 @@ section.testimonials div.client-2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  section.testimonials div.client-1 div:last-child, section.testimonials div.client-2 div:last-child {
+    width: 100%;
+  }
 }
 
 section.team {
@@ -1257,6 +1266,7 @@ section.team div.team-header p:last-child {
   color: #666;
   font-style: italic;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 
 section.team div.team-members {
@@ -1345,9 +1355,6 @@ section.team div.team-members div p:last-of-type {
 }
 
 @media (max-width: 991.98px) {
-  section.team div.team-header p:last-child {
-    text-align: center !important;
-  }
   section.team div.team-members div:first-child, section.team div.team-members div:nth-child(2) {
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
@@ -1358,9 +1365,6 @@ section.team div.team-members div p:last-of-type {
   section.team div.team-members div:first-child, section.team div.team-members div:nth-child(2), section.team div.team-members div:nth-child(3) {
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
-  }
-  section.team div.team-members div div:last-of-type {
-    width: 20% !important;
   }
 }
 
@@ -1552,6 +1556,12 @@ footer p:last-child {
 footer p:last-child span {
   color: #03C4EB;
   font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  footer p:first-child {
+    font-size: 15px;
+  }
 }
 
 #preloader {

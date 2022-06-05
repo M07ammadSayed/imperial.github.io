@@ -589,7 +589,7 @@ section.portfolio
         display: flex
         justify-content: space-between
         list-style: none
-        margin: 0 0 50px
+        margin: 0 auto 30px !important
         padding: 0
         li
             color: #666
@@ -599,6 +599,11 @@ section.portfolio
             cursor: pointer
             &:hover
                 color: $main-color
+
+@media (max-width: 991.98px)
+    section.portfolio
+        ul
+            width: 40% !important
 
 section.testimonials
     position: relative
@@ -719,6 +724,10 @@ section.testimonials
             margin-block-end: 50px
         div.client-2
             flex-direction: column
+        div.client-1, div.client-2
+            div
+                &:last-child
+                    width: 100%
 
     
 section.team
@@ -770,6 +779,7 @@ section.team
                 color: #666
                 font-style: italic
                 letter-spacing: 1.5px
+                text-align: center
     div.team-members
         width: 100%
         margin: 0 !important
@@ -820,10 +830,6 @@ section.team
 
 @media (max-width: 991.98px)
     section.team
-        div.team-header
-            p
-                &:last-child
-                    text-align: center !important
         div.team-members
             div
                 &:first-child, &:nth-child(2)
@@ -835,9 +841,6 @@ section.team
             div
                 &:first-child, &:nth-child(2), &:nth-child(3)
                     margin-block-end: 50px !important
-                div
-                    &:last-of-type
-                        width: 20% !important
 
 section.contact
     position: relative
@@ -953,6 +956,12 @@ footer
             span
                 color: $main-color
                 font-weight: 700
+
+@media (max-width: 767.98px)
+    footer
+        p
+            &:first-child
+                font-size: 15px
 
 #preloader
     position: fixed
