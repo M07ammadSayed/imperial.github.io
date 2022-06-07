@@ -5,10 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link href="css/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/animate.css" />
+        <link href="css/glightbox.min.css" rel="stylesheet">
         <link rel="icon" href="imgs/logo.png" type="image/x-icon" />
         <title>Imperial</title>
     </head>
@@ -138,99 +140,99 @@
                 <p class="wow fadeInDown">PORTFOLIO</p>
                 <p class="wow fadeInDown" style="animation-delay: .5s;">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
             </div>
-            <ul class="wow fadeInDown" style="animation-delay: .5s;">
-                <li class="active">All</li>
-                <li>App</li>
-                <li>Card</li>
-                <li>Web</li>
+            <ul id=portfolio-flters class="wow fadeInDown" style="animation-delay: .5s;">
+                <li data-filter="*" class="active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
             </ul>
-            <div class="row wow fadeInDown" style="animation-delay: .5s;">
-                <div class="col-lg-4">
+            <div class="portfolio-container row wow fadeInDown" style="animation-delay: .5s;">
+                <div class="col-lg-4 portfolio-item filter-app">
                     <div>
                         <p>App-1</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App-1"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-1.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-web">
                     <div>
                         <p>Web-3</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web-3"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-2.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-app">
                     <div>
                         <p>App-2</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App-2"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-3.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-card">
                     <div>
                         <p>Card-2</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card-2"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-4.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-web">
                     <div>
                         <p>Web-2</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web-2"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-5.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-app">
                     <div>
                         <p>App-3</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App-3"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-6.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-card">
                     <div>
                         <p>Card-1</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card-1"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-7.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-card">
                     <div>
                         <p>Card-3</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card-3"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-8.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 portfolio-item filter-web">
                     <div>
                         <p>Web-3</p>
                         <div>
                             <a href="portfolio-details.html"><i class="fa-solid fa-circle-info"></i></a>
-                            <button><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                            <a href="imgs/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web-3"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
                         </div>
                     </div>
                     <img src="imgs/portfolio-9.jpg" alt="">
@@ -401,6 +403,9 @@
 
         <div id="preloader"></div>
 
+        <script src="js/aos.js"></script>
+        <script src="js/glightbox.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/all.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/wow.min.js"></script>

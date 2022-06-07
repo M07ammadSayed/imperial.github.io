@@ -905,11 +905,11 @@ section.portfolio div.portfolio-header p:last-child {
   text-align: center;
 }
 
-section.portfolio div.row {
+section.portfolio div.portfolio-container {
   width: 80%;
 }
 
-section.portfolio div.row div {
+section.portfolio div.portfolio-container div {
   height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,12 +927,12 @@ section.portfolio div.row div {
   margin: 0 0 30px;
 }
 
-section.portfolio div.row div:hover div {
+section.portfolio div.portfolio-container div:hover div {
   opacity: 1;
   z-index: 9997;
 }
 
-section.portfolio div.row div div {
+section.portfolio div.portfolio-container div div {
   width: 336px;
   height: 270px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -945,7 +945,7 @@ section.portfolio div.row div div {
   transition: .5s;
 }
 
-section.portfolio div.row div div p {
+section.portfolio div.portfolio-container div div p {
   color: #E4E6EB;
   -webkit-margin-after: 20px !important;
           margin-block-end: 20px !important;
@@ -954,7 +954,7 @@ section.portfolio div.row div div p {
   cursor: default;
 }
 
-section.portfolio div.row div div div {
+section.portfolio div.portfolio-container div div div {
   width: 30%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -972,7 +972,7 @@ section.portfolio div.row div div div {
       justify-content: space-around;
 }
 
-section.portfolio div.row div div div button {
+section.portfolio div.portfolio-container div div div a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -983,30 +983,13 @@ section.portfolio div.row div div div button {
   border: 0;
 }
 
-section.portfolio div.row div div div button svg {
+section.portfolio div.portfolio-container div div div a svg {
   color: #03C4EB;
   width: 20px;
   height: 20px;
 }
 
-section.portfolio div.row div div div a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: transparent;
-  border: 0;
-}
-
-section.portfolio div.row div div div a svg {
-  color: #03C4EB;
-  width: 20px;
-  height: 20px;
-}
-
-section.portfolio div.row div img {
+section.portfolio div.portfolio-container div img {
   position: absolute;
   padding: 0 12px;
   width: 360px;
@@ -1022,7 +1005,7 @@ section.portfolio ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  margin: 0 auto 30px !important;
+  margin: 0 auto 35px !important;
   padding: 0;
 }
 
@@ -1030,8 +1013,8 @@ section.portfolio ul li {
   color: #666;
   font-size: 14px;
   font-weight: 700;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .3s;
+  transition: .3s;
   cursor: pointer;
 }
 

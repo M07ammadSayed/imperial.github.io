@@ -570,7 +570,7 @@ section.portfolio
                 font-style: italic
                 letter-spacing: 1.5px
                 text-align: center
-    div.row
+    div.portfolio-container
         width: 80%
         div
             height: 270px
@@ -607,15 +607,6 @@ section.portfolio
                     display: flex
                     flex-direction: row
                     justify-content: space-around
-                    button
-                        width: fit-content
-                        height: fit-content
-                        background-color: transparent
-                        border: 0
-                        svg
-                            color: $main-color
-                            width: 20px
-                            height: 20px
                     a
                         width: fit-content
                         height: fit-content
@@ -635,13 +626,13 @@ section.portfolio
         display: flex
         justify-content: space-between
         list-style: none
-        margin: 0 auto 30px !important
+        margin: 0 auto 35px !important
         padding: 0
         li
             color: #666
             font-size: 14px
             font-weight: 700
-            transition: .5s
+            transition: .3s
             cursor: pointer
             &:hover
                 color: $main-color

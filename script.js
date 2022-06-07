@@ -141,4 +141,32 @@ for (let i = 0; i < navElements.length; i++) {
     });
 };
 
+window.addEventListener('load', () => {
+    let portfolioContainer = document.querySelector('.portfolio-container');
+    let portfolioFilters = document.querySelectorAll('#portfolio-flters li');
+
+    if (portfolioContainer) {
+        let portfolioIsotope = new Isotope(portfolioContainer, {
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
+        for (let i = 0; i < portfolioFilters.length; i++) {
+            const element = portfolioFilters[i];
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+                portfolioIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                aos_init();
+            }, true);
+        }
+    }
+});
+
+(() => {
+    const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+    });
+})()
+
 new WOW().init();
