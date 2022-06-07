@@ -1721,25 +1721,28 @@ section.portfolio-description div.container {
 }
 
 section.portfolio-description div.container div.portfolio-details-slider {
-  width: 100% !important;
-  margin: 0 !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 
 section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper {
   width: 736px;
   height: 426.27px;
   margin: 0 !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide img {
+section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide {
+  width: 100%;
   height: 100%;
 }
 
-section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide img:first-child {
-  width: 100% !important;
+section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 
 section.portfolio-description div.container div.portfolio-details-slider .swiper-pagination {
@@ -1756,10 +1759,6 @@ section.portfolio-description div.container div.portfolio-details-slider .swiper
   border: 1px solid #03C4EB;
 }
 
-section.portfolio-description div.container div.portfolio-details-slider .swiper-pagination .swiper-pagination-bullet:active {
-  background-color: #03C4EB;
-}
-
 section.portfolio-description div.container div:last-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1774,8 +1773,8 @@ section.portfolio-description div.container div:last-child {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-margin-start: 20px;
-          margin-inline-start: 20px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
 }
 
 section.portfolio-description div.container div:last-child div:first-child {
@@ -1871,15 +1870,14 @@ section.portfolio-description div.container div:last-child div:last-child p {
             margin-inline-end: 0 !important;
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
-    max-width: 100% !important;
   }
   section.portfolio-description div.container div.portfolio-details-slider div.swiper-wrapper {
-    max-width: 100% !important;
+    width: 100% !important;
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
   }
-  section.portfolio-description div.container div.portfolio-details-slider div.swiper-wrapper div.swiper-slide img {
+  section.portfolio-description div.container div.portfolio-details-slider div.swiper-wrapper div.swiper-slide {
     width: 100% !important;
   }
   section.portfolio-description div.container div:last-child {
@@ -1928,5 +1926,9 @@ section.portfolio-description div.container div:last-child div:last-child p {
 
 .active {
   color: #03C4EB !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #03C4EB !important;
 }
 /*# sourceMappingURL=style.css.map */

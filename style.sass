@@ -1054,18 +1054,19 @@ section.portfolio-description
         justify-content: center
         align-items: flex-start
         div.portfolio-details-slider
-                width: 100% !important
-                margin: 0 !important
+                width: fit-content
+                margin: 0
+                margin-inline-end: 10px
                 .swiper-wrapper
                     width: 736px
                     height: 426.27px
                     margin: 0 !important
-                    display: flex
                     div.swiper-slide
+                        width: 100%
+                        height: 100%
                         img
+                            width: 100%
                             height: 100%
-                            &:first-child
-                                width: 100% !important
                 .swiper-pagination
                     margin-top: 20px
                     position: relative
@@ -1076,15 +1077,13 @@ section.portfolio-description
                         background-color: #fff
                         opacity: 1
                         border: 1px solid $main-color
-                        &:active
-                            background-color: $main-color
         div
             &:last-child
                 width: fit-content
                 display: flex
                 flex-direction: column
                 align-items: flex-start
-                margin-inline-start: 20px
+                margin-inline-start: 10px
                 div
                     &:first-child
                         width: fit-content
@@ -1131,19 +1130,13 @@ section.portfolio-description
             flex-direction: column !important
             align-items: center !important
             div.portfolio-details-slider
-                // height: fit-content !important
                 margin-inline-end: 0 !important
                 margin-block-end: 50px !important
-                max-width: 100% !important
                 div.swiper-wrapper
-                    max-width: 100% !important
+                    width: 100% !important
                     height: fit-content !important
                     div.swiper-slide
-                        // height: 100% !important
-                        img
-                            width: 100% !important
-            //                 &:first-child
-            //                     width: 100% !important
+                        width: 100% !important
             div
                 &:last-child
                     width: 100% !important
@@ -1176,3 +1169,6 @@ section.portfolio-description
 
 .active
     color: $main-color !important
+
+.swiper-pagination-bullet-active
+    background-color: $main-color !important
