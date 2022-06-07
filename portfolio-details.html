@@ -150,6 +150,18 @@
                         showSlides(slideIndex += 1);
                 }, 5000);
             }
+
+            document.querySelector(".bars").onclick = function () {
+                "use strict";
+                document.querySelector("nav ul").style.display = "flex";
+                document.body.style.overflowY = "hidden";
+            }
+
+            document.querySelector("nav ul span").addEventListener("click", () => {
+                "use strict";
+                document.querySelector("nav ul").style.display = "none";
+                document.body.style.overflowY = "auto";
+            })
         </script>
     </body>
 </html>
