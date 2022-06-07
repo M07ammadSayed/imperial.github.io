@@ -1707,7 +1707,7 @@ section.portfolio-description div.portfolio-header p a {
   color: #03C4EB;
 }
 
-section.portfolio-description div.portfolio-details {
+section.portfolio-description div.container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1720,107 +1720,41 @@ section.portfolio-description div.portfolio-details {
           align-items: flex-start;
 }
 
-section.portfolio-description div.portfolio-details div:first-child {
+section.portfolio-description div.container div:first-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  margin: 0 !important;
 }
 
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  margin: auto;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .mySlides {
+section.portfolio-description div.container div:first-child .swiper-wrapper {
   width: 736px;
   height: 426.27px;
-  display: none;
-  overflow: hidden;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .mySlides img:first-child {
-  height: 426.27px;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .prev, section.portfolio-description div.portfolio-details div:first-child .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .prev {
-  left: 0;
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .prev:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-section.portfolio-description div.portfolio-details div:first-child .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-section.portfolio-description div.portfolio-details div:first-child div.dot-container {
-  width: 75px !important;
+  margin: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-section.portfolio-description div.portfolio-details div:first-child div.dot-container .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: transparent;
+section.portfolio-description div.container div:first-child .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+section.portfolio-description div.container div:first-child .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
   border: 1px solid #03C4EB;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
 }
 
-section.portfolio-description div.portfolio-details div:last-child {
+section.portfolio-description div.container div:first-child .swiper-pagination .swiper-pagination-bullet:active {
+  background-color: #03C4EB;
+}
+
+section.portfolio-description div.container div:last-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1834,11 +1768,11 @@ section.portfolio-description div.portfolio-details div:last-child {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  -webkit-margin-start: 20px;
+          margin-inline-start: 20px;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:first-child {
+section.portfolio-description div.container div:last-child div:first-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1854,13 +1788,13 @@ section.portfolio-description div.portfolio-details div:last-child div:first-chi
           align-items: flex-start;
   padding: 30px;
   background-color: #fff;
-  -webkit-margin-after: 50px;
-          margin-block-end: 50px;
+  -webkit-margin-after: 50px !important;
+          margin-block-end: 50px !important;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:first-child h2 {
+section.portfolio-description div.container div:last-child div:first-child h2 {
   border-bottom: 1px solid #eee;
   color: #666;
   -webkit-padding-after: 20px;
@@ -1870,18 +1804,18 @@ section.portfolio-description div.portfolio-details div:last-child div:first-chi
   font-size: 22px;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:first-child p {
+section.portfolio-description div.container div:last-child div:first-child p {
   color: #666;
   -webkit-margin-before: 15px;
           margin-block-start: 15px;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:first-child p a {
+section.portfolio-description div.container div:last-child div:first-child p a {
   text-decoration: none;
   color: #03C4EB;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:last-child {
+section.portfolio-description div.container div:last-child div:last-child {
   width: 373px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1897,14 +1831,14 @@ section.portfolio-description div.portfolio-details div:last-child div:last-chil
   margin: 0 !important;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:last-child h3 {
+section.portfolio-description div.container div:last-child div:last-child h3 {
   font-size: 26px;
   font-weight: 700;
   -webkit-margin-after: 20px;
           margin-block-end: 20px;
 }
 
-section.portfolio-description div.portfolio-details div:last-child div:last-child p {
+section.portfolio-description div.container div:last-child div:last-child p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1917,7 +1851,7 @@ section.portfolio-description div.portfolio-details div:last-child div:last-chil
   section.portfolio-description {
     width: 100% !important;
   }
-  section.portfolio-description div.portfolio-details {
+  section.portfolio-description div.container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -1926,26 +1860,30 @@ section.portfolio-description div.portfolio-details div:last-child div:last-chil
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  section.portfolio-description div.portfolio-details div:first-child {
+  section.portfolio-description div.container div:first-child {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     -webkit-margin-end: 0 !important;
             margin-inline-end: 0 !important;
-  }
-  section.portfolio-description div.portfolio-details div:first-child .slideshow-container .mySlides {
-    width: 100% !important;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
-  }
-  section.portfolio-description div.portfolio-details div:first-child .slideshow-container .mySlides img {
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
-  }
-  section.portfolio-description div.portfolio-details div:first-child div.dot-container {
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
+    max-width: 100% !important;
   }
-  section.portfolio-description div.portfolio-details div:last-child {
+  section.portfolio-description div.container div:first-child .swiper-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  section.portfolio-description div.container div:first-child .swiper-wrapper div {
+    height: 100% !important;
+  }
+  section.portfolio-description div.container div:first-child .swiper-wrapper div img {
+    width: 100% !important;
+  }
+  section.portfolio-description div.container div:first-child .swiper-wrapper div img:first-child {
+    width: 100% !important;
+  }
+  section.portfolio-description div.container div:last-child {
     width: 100% !important;
     -webkit-margin-start: 0 !important;
             margin-inline-start: 0 !important;
@@ -1953,7 +1891,7 @@ section.portfolio-description div.portfolio-details div:last-child div:last-chil
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  section.portfolio-description div.portfolio-details div:last-child div:first-child {
+  section.portfolio-description div.container div:last-child div:first-child {
     width: 100% !important;
   }
 }
@@ -1976,31 +1914,6 @@ section.portfolio-description div.portfolio-details div:last-child div:last-chil
 
 .active-2 {
   background-color: #03C4EB !important;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 #preloader {

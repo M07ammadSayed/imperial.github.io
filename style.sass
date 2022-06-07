@@ -1048,7 +1048,7 @@ section.portfolio-description
             a
                 text-decoration: none
                 color: $main-color
-    div.portfolio-details
+    div.container
         width: 100%
         display: flex
         justify-content: center
@@ -1056,67 +1056,35 @@ section.portfolio-description
         div
             &:first-child
                 width: fit-content
-                display: flex
-                flex-direction: column
-                align-items: center
-                margin-inline-end: 10px
-                .slideshow-container
-                    width: fit-content
-                    position: relative
-                    margin: auto
-                    .mySlides
-                        width: 736px
-                        height: 426.27px
-                        display: none
-                        overflow: hidden
+                margin: 0 !important
+                .swiper-wrapper
+                    width: 736px
+                    height: 426.27px
+                    margin: 0 !important
+                    display: flex
+                    div
                         img
                             &:first-child
-                                height: 426.27px
-                    .prev, .next
-                        cursor: pointer
-                        position: absolute
-                        top: 50%
-                        width: auto
-                        margin-top: -22px
-                        padding: 16px
-                        color: white
-                        font-weight: bold
-                        font-size: 18px
-                        transition: 0.6s ease
-                        border-radius: 0 3px 3px 0
-                        user-select: none
-                    .next
-                        right: 0
-                        border-radius: 3px 0 0 3px
-                    .prev
-                        left: 0
-                    .prev
-                        &:hover
-                            background-color: rgba(0,0,0,0.8)
-                    .next
-                        &:hover
-                            background-color: rgba(0,0,0,0.8)
-                div.dot-container
-                    width: 75px !important
-                    display: flex
-                    flex-direction: row
-                    justify-content: space-between
-                    .dot
-                        cursor: pointer
-                        height: 15px
-                        width: 15px
-                        margin: 0 2px
-                        background-color: transparent
+                                // width: 736px !important
+                                // height: 426.27px !important
+                .swiper-pagination
+                    margin-top: 20px
+                    position: relative
+                    bottom: 10px
+                    .swiper-pagination-bullet
+                        width: 12px
+                        height: 12px
+                        background-color: #fff
+                        opacity: 1
                         border: 1px solid $main-color
-                        border-radius: 50%
-                        display: inline-block
-                        transition: background-color 0.6s ease
+                        &:active
+                            background-color: $main-color
             &:last-child
                 width: fit-content
                 display: flex
                 flex-direction: column
                 align-items: flex-start
-                margin-inline-start: 10px
+                margin-inline-start: 20px
                 div
                     &:first-child
                         width: fit-content
@@ -1125,7 +1093,7 @@ section.portfolio-description
                         align-items: flex-start
                         padding: 30px
                         background-color: #fff
-                        margin-block-end: 50px
+                        margin-block-end: 50px !important
                         box-shadow: 0 .5rem 1rem rgba(black, .15)
                         h2
                             border-bottom: 1px solid #eee
@@ -1159,20 +1127,24 @@ section.portfolio-description
 @media (max-width: 991.98px)
     section.portfolio-description
         width: 100% !important
-        div.portfolio-details
+        div.container
             flex-direction: column !important
             align-items: center !important
             div
                 &:first-child
+                    height: fit-content !important
                     margin-inline-end: 0 !important
-                    .slideshow-container
-                        .mySlides
-                            width: 100% !important
-                            height: fit-content !important
+                    margin-block-end: 50px !important
+                    max-width: 100% !important
+                    .swiper-wrapper
+                        width: 100% !important
+                        height: 100% !important
+                        div
+                            height: 100% !important
                             img
-                                height: fit-content !important
-                    div.dot-container
-                        margin-block-end: 50px !important
+                                width: 100% !important
+                                &:first-child
+                                    width: 100% !important
                 &:last-child
                     width: 100% !important
                     margin-inline-start: 0 !important
@@ -1191,16 +1163,6 @@ section.portfolio-description
 
 .active-2
     background-color: $main-color !important
-
-.fade
-    animation-name: fade
-    animation-duration: 1.5s
-
-@keyframes fade 
-    from
-        opacity: .4
-    to
-        opacity: 1
 
 #preloader
     position: fixed
