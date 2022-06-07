@@ -1720,14 +1720,12 @@ section.portfolio-description div.container {
           align-items: flex-start;
 }
 
-section.portfolio-description div.container div:first-child {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+section.portfolio-description div.container div.portfolio-details-slider {
+  width: 100% !important;
   margin: 0 !important;
 }
 
-section.portfolio-description div.container div:first-child .swiper-wrapper {
+section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper {
   width: 736px;
   height: 426.27px;
   margin: 0 !important;
@@ -1736,13 +1734,21 @@ section.portfolio-description div.container div:first-child .swiper-wrapper {
   display: flex;
 }
 
-section.portfolio-description div.container div:first-child .swiper-pagination {
+section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide img {
+  height: 100%;
+}
+
+section.portfolio-description div.container div.portfolio-details-slider .swiper-wrapper div.swiper-slide img:first-child {
+  width: 100% !important;
+}
+
+section.portfolio-description div.container div.portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
   bottom: 10px;
 }
 
-section.portfolio-description div.container div:first-child .swiper-pagination .swiper-pagination-bullet {
+section.portfolio-description div.container div.portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1750,7 +1756,7 @@ section.portfolio-description div.container div:first-child .swiper-pagination .
   border: 1px solid #03C4EB;
 }
 
-section.portfolio-description div.container div:first-child .swiper-pagination .swiper-pagination-bullet:active {
+section.portfolio-description div.container div.portfolio-details-slider .swiper-pagination .swiper-pagination-bullet:active {
   background-color: #03C4EB;
 }
 
@@ -1860,27 +1866,20 @@ section.portfolio-description div.container div:last-child div:last-child p {
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  section.portfolio-description div.container div:first-child {
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
+  section.portfolio-description div.container div.portfolio-details-slider {
     -webkit-margin-end: 0 !important;
             margin-inline-end: 0 !important;
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
     max-width: 100% !important;
   }
-  section.portfolio-description div.container div:first-child .swiper-wrapper {
-    width: 100% !important;
-    height: 100% !important;
+  section.portfolio-description div.container div.portfolio-details-slider div.swiper-wrapper {
+    max-width: 100% !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
-  section.portfolio-description div.container div:first-child .swiper-wrapper div {
-    height: 100% !important;
-  }
-  section.portfolio-description div.container div:first-child .swiper-wrapper div img {
-    width: 100% !important;
-  }
-  section.portfolio-description div.container div:first-child .swiper-wrapper div img:first-child {
+  section.portfolio-description div.container div.portfolio-details-slider div.swiper-wrapper div.swiper-slide img {
     width: 100% !important;
   }
   section.portfolio-description div.container div:last-child {

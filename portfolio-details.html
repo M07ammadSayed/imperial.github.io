@@ -38,15 +38,15 @@
                 <div class="portfolio-details-slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="imgs/portfolio-1.jpg" alt="" style="max-width: 100%;">
+                            <img src="imgs/portfolio-1.jpg">
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="imgs/portfolio-details-2.jpg" alt="" style="max-width: 100%;">
+                            <img src="imgs/portfolio-details-2.jpg">
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="imgs/portfolio-details-3.jpg" alt="" style="max-width: 100%;">
+                            <img src="imgs/portfolio-details-3.jpg">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -81,20 +81,6 @@
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/all.min.js"></script>
         <script>
-            new Swiper('.portfolio-details-slider', {
-                speed: 400,
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                    clickable: true
-                }
-            });
-
             let preloader = document.getElementById("preloader");
             if (preloader) {
                 window.addEventListener('load', () => {
@@ -120,33 +106,33 @@
                 });
             });
 
-            let slideIndex = 1;
-            showSlides(slideIndex);
+            // let slideIndex = 1;
+            // showSlides(slideIndex);
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            };
+            // function plusSlides(n) {
+            //     showSlides(slideIndex += n);
+            // };
 
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            };
+            // // Thumbnail image controls
+            // function currentSlide(n) {
+            //     showSlides(slideIndex = n);
+            // };
 
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active-2", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active-2";
-            };
+            // function showSlides(n) {
+            //     let i;
+            //     let slides = document.getElementsByClassName("mySlides");
+            //     let dots = document.getElementsByClassName("dot");
+            //     if (n > slides.length) {slideIndex = 1}
+            //     if (n < 1) {slideIndex = slides.length}
+            //     for (i = 0; i < slides.length; i++) {
+            //         slides[i].style.display = "none";
+            //     }
+            //     for (i = 0; i < dots.length; i++) {
+            //         dots[i].className = dots[i].className.replace(" active-2", "");
+            //     }
+            //     slides[slideIndex-1].style.display = "block";
+            //     dots[slideIndex-1].className += " active-2";
+            // };
 
             document.querySelector(".bars").onclick = function () {
                 "use strict";
@@ -158,6 +144,20 @@
                 "use strict";
                 document.querySelector("nav ul").style.display = "none";
                 document.body.style.overflowY = "auto";
+            });
+
+            new Swiper('.portfolio-details-slider', {
+                speed: 400,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                }
             });
         </script>
     </body>
