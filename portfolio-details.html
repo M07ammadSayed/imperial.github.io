@@ -90,6 +90,7 @@
 
         <div id=preloader></div>
         
+        <script src="js/all.min.js"></script>
         <script>
             let preloader = document.getElementById("preloader");
             if (preloader) {
@@ -97,12 +98,12 @@
                     setTimeout(() => {
                         preloader.remove();
                         document.body.style.overflowY = "auto";
-                    }, 100);
+                    }, 150);
                 });
             };
 
             window.onscroll = () => {
-                if (this.scrollY >= 200) {
+                if (this.scrollY >= 100) {
                     document.querySelector(".to-top").style.bottom = "15px";
                 } else {
                     document.querySelector(".to-top").style.bottom = "-50px";
