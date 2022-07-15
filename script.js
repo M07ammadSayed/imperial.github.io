@@ -61,35 +61,35 @@ window.onscroll = function() {
         navElement[0].className = "active";
     }
 
-    if (this.scrollY >= document.querySelector(".about").offsetTop && this.scrollY < document.querySelector(".services").offsetTop) {
+    if (this.scrollY >= document.querySelector(".about").offsetTop && this.scrollY < document.querySelector(".about").offsetTop + document.querySelector(".about").offsetHeight) {
         navElement[0].className = "";
         navElement[1].className = "active";
     } else {
         navElement[1].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".services").offsetTop && this.scrollY < document.querySelector(".portfolio").offsetTop) {
+    if (this.scrollY >= document.querySelector(".services").offsetTop && this.scrollY < document.querySelector(".services").offsetTop + document.querySelector(".services").offsetHeight) {
         navElement[1].className = "";
         navElement[2].className = "active";
     } else {
         navElement[2].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".portfolio").offsetTop && this.scrollY < document.querySelector(".testimonials").offsetTop) {
+    if (this.scrollY >= document.querySelector(".portfolio").offsetTop && this.scrollY < document.querySelector(".portfolio").offsetTop + document.querySelector(".portfolio").offsetHeight) {
         navElement[2].className = "";
         navElement[3].className = "active";
     } else {
         navElement[3].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".testimonials").offsetTop && this.scrollY < document.querySelector(".team").offsetTop) {
+    if (this.scrollY >= document.querySelector(".testimonials").offsetTop && this.scrollY < document.querySelector(".testimonials").offsetTop + document.querySelector(".testimonials").offsetHeight) {
         navElement[3].className = "";
         navElement[4].className = "active";
     } else {
         navElement[4].className = "";
     }
 
-    if (this.scrollY >= document.querySelector(".team").offsetTop && this.scrollY < document.querySelector(".contact").offsetTop) {
+    if (this.scrollY >= document.querySelector(".team").offsetTop && this.scrollY < document.querySelector(".team").offsetTop + document.querySelector(".team").offsetHeight) {
         navElement[4].className = "";
         navElement[5].className = "active";
     } else {
@@ -111,7 +111,6 @@ window.onscroll = function() {
 };
 
 document.querySelector(".to-top").addEventListener("click", function() {
-    "use strict";
     window.scroll({
         top: 0,
         behavior: "smooth"
@@ -119,20 +118,17 @@ document.querySelector(".to-top").addEventListener("click", function() {
 });
 
 document.querySelector(".bars").onclick = function () {
-    "use strict";
     document.querySelector("nav ul").style.display = "flex";
     document.body.style.overflowY = "hidden";
 };
 
 document.querySelector("nav ul span").addEventListener("click", () => {
-    "use strict";
     document.querySelector("nav ul").style.display = "none";
     document.body.style.overflowY = "auto";
 });
 
 const navElements = document.querySelectorAll("nav ul li a");
 for (let i = 0; i < navElements.length; i++) {
-    "use strict";
     navElements[i].addEventListener("click", function () {
         if (document.documentElement.clientWidth <= 991.98) {
             document.querySelector("nav ul").style.display = "none";

@@ -1507,10 +1507,11 @@ section.contact div.contact-details {
 }
 
 section.contact div.contact-details div {
+  position: relative;
   width: 312.66px;
   height: 154px;
   padding: 0 !important;
-  background-color: #fff;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,18 +1521,45 @@ section.contact div.contact-details div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid #03C4EB;
-  border-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 24px;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(400px);
+          transform: perspective(400px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
 }
 
 section.contact div.contact-details div:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
-section.contact div.contact-details div svg {
+section.contact div.contact-details div div:first-child {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  z-index: -1;
+  -webkit-transform: perspective(400px);
+          transform: perspective(400px);
+}
+
+section.contact div.contact-details div div:first-child svg {
   width: 32px;
   height: 32px;
   color: #03C4EB;
@@ -1539,7 +1567,26 @@ section.contact div.contact-details div svg {
           margin-inline-end: 15px;
 }
 
-section.contact div.contact-details div p {
+section.contact div.contact-details div div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: perspective(400px) rotateY(180deg);
+          transform: perspective(400px) rotateY(180deg);
+}
+
+section.contact div.contact-details div div:last-child p {
   margin: 0;
   color: #666;
   font-weight: 700;
