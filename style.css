@@ -1520,8 +1520,8 @@ section.contact div.contact-details div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 3s;
+  transition: 3s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: perspective(400px);
@@ -1541,6 +1541,8 @@ section.contact div.contact-details div div {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
+  -webkit-transform-style: preserve-3d !important;
+          transform-style: preserve-3d !important;
 }
 
 section.contact div.contact-details div div:first-child {
@@ -1558,14 +1560,18 @@ section.contact div.contact-details div div:first-child {
           align-items: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -webkit-transform: perspective(400px);
-          transform: perspective(400px);
+  -webkit-transform: perspective(100000px);
+          transform: perspective(100000px);
 }
 
 section.contact div.contact-details div div:first-child svg {
   width: 32px;
   height: 32px;
   color: #03C4EB;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
 }
 
 section.contact div.contact-details div div:last-child {
@@ -1591,6 +1597,10 @@ section.contact div.contact-details div div:last-child p {
   margin: 0;
   color: #666;
   font-weight: 700;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
 }
 
 @media (max-width: 991.98px) {

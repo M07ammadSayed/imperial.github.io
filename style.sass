@@ -942,7 +942,7 @@ section.contact
             display: flex
             justify-content: center
             align-items: center
-            transition: .5s
+            transition: 3s
             transform-style: preserve-3d
             transform: perspective(400px)
             background-color: transparent
@@ -954,6 +954,7 @@ section.contact
                 border-top-left-radius: 24px
                 box-shadow: 0 .5rem 1rem rgba(black, .15)
                 background-color: #fff
+                transform-style: preserve-3d !important
                 &:first-child
                     position: absolute
                     display: flex
@@ -964,11 +965,13 @@ section.contact
                     backface-visibility: hidden
                     -webkit-backface-visibility: hidden
                     // z-index: -1
-                    transform: perspective(400px)
+                    transform: perspective(100000px)
                     svg
                         width: 32px
                         height: 32px
                         color: $main-color
+                        transform-style: preserve-3d
+                        transform: translateZ(50px)
                 &:last-child
                     display: flex
                     position: absolute
@@ -983,6 +986,8 @@ section.contact
                         margin: 0
                         color: #666
                         font-weight: 700
+                        transform-style: preserve-3d
+                        transform: translateZ(50px)
 
 @media (max-width: 991.98px)
     section.contact
