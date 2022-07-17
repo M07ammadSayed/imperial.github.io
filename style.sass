@@ -939,21 +939,21 @@ section.contact
             width: 312.66px
             height: 154px
             padding: 0 !important
-            background-color: transparent
             display: flex
             justify-content: center
             align-items: center
-            border-bottom-right-radius: 24px
-            border-top-left-radius: 24px
             transition: .5s
             transform-style: preserve-3d
             transform: perspective(400px)
-            box-shadow: 0 .5rem 1rem rgba(black, .15)
-            background-color: #fff
+            background-color: transparent
             &:hover
-                // transform: scale(1.05)
                 transform: rotateY(180deg)
             div
+                border: 0
+                border-bottom-right-radius: 24px
+                border-top-left-radius: 24px
+                box-shadow: 0 .5rem 1rem rgba(black, .15)
+                background-color: #fff
                 &:first-child
                     position: absolute
                     display: flex
@@ -963,13 +963,12 @@ section.contact
                     align-items: center
                     backface-visibility: hidden
                     -webkit-backface-visibility: hidden
-                    z-index: -1
+                    // z-index: -1
                     transform: perspective(400px)
                     svg
                         width: 32px
                         height: 32px
                         color: $main-color
-                        margin-inline-end: 15px
                 &:last-child
                     display: flex
                     position: absolute
@@ -993,7 +992,7 @@ section.contact
         div.contact-details
             div
                 &:first-child, &:nth-child(2)
-                    margin-block-end: 20px
+                    margin-block-end: 50px
 
 footer
     position: relative

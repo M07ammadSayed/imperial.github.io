@@ -1511,7 +1511,6 @@ section.contact div.contact-details div {
   width: 312.66px;
   height: 154px;
   padding: 0 !important;
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1521,22 +1520,27 @@ section.contact div.contact-details div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom-right-radius: 24px;
-  border-top-left-radius: 24px;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: perspective(400px);
           transform: perspective(400px);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: transparent;
 }
 
 section.contact div.contact-details div:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+section.contact div.contact-details div div {
+  border: 0;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 24px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
 }
 
 section.contact div.contact-details div div:first-child {
@@ -1554,7 +1558,6 @@ section.contact div.contact-details div div:first-child {
           align-items: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  z-index: -1;
   -webkit-transform: perspective(400px);
           transform: perspective(400px);
 }
@@ -1563,8 +1566,6 @@ section.contact div.contact-details div div:first-child svg {
   width: 32px;
   height: 32px;
   color: #03C4EB;
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
 }
 
 section.contact div.contact-details div div:last-child {
@@ -1603,8 +1604,8 @@ section.contact div.contact-details div div:last-child p {
             margin-block-end: 50px !important;
   }
   section.contact div.contact-details div:first-child, section.contact div.contact-details div:nth-child(2) {
-    -webkit-margin-after: 20px;
-            margin-block-end: 20px;
+    -webkit-margin-after: 50px;
+            margin-block-end: 50px;
   }
 }
 
