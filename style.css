@@ -1507,6 +1507,17 @@ section.contact div.contact-details {
 }
 
 section.contact div.contact-details div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section.contact div.contact-details div:hover div {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+section.contact div.contact-details div div {
   position: relative;
   width: 312.66px;
   height: 154px;
@@ -1529,23 +1540,18 @@ section.contact div.contact-details div {
   background-color: transparent;
 }
 
-section.contact div.contact-details div:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-section.contact div.contact-details div div {
+section.contact div.contact-details div div div {
   border: 0;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #fff !important;
   -webkit-transform-style: preserve-3d !important;
           transform-style: preserve-3d !important;
 }
 
-section.contact div.contact-details div div:first-child {
+section.contact div.contact-details div div div:first-child {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1564,7 +1570,7 @@ section.contact div.contact-details div div:first-child {
           transform: perspective(100000px);
 }
 
-section.contact div.contact-details div div:first-child svg {
+section.contact div.contact-details div div div:first-child svg {
   width: 32px;
   height: 32px;
   color: #03C4EB;
@@ -1574,7 +1580,7 @@ section.contact div.contact-details div div:first-child svg {
           transform: translateZ(50px);
 }
 
-section.contact div.contact-details div div:last-child {
+section.contact div.contact-details div div div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1593,7 +1599,7 @@ section.contact div.contact-details div div:last-child {
           transform: perspective(400px) rotateY(180deg);
 }
 
-section.contact div.contact-details div div:last-child p {
+section.contact div.contact-details div div div:last-child p {
   margin: 0;
   color: #666;
   font-weight: 700;
