@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Details</title>
+        <link rel="stylesheet" href="style.min.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+
+    <body style="overflow-y: hidden;">
+        <nav class="wow fadeIn" style="background-color: rgba(0, 0, 0, .85);">
+            <a href="#Home">
+                <img src="imgs/logo.png" alt="Logo" />
+            </a>
+            <ul>
+                <span>X</span>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#Services">Services</a></li>
+                <li><a href="index.html#Portfolio">Portfolio</a></li>
+                <li><a href="index.html#Testimonials">Testimonials</a></li>
+                <li><a href="index.html#Team">Team</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </nav>
+
+        <section class="portfolio-description wow fadeIn">
+            <div class="portfolio-header">
+                <h1>Portfoio Details</h1>
+                <p><a href="index.html#Home">Home</a> / Portfoio Details</p>
+            </div>
+            <div class="container">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imgs/portfolio-details-1.jpg">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="imgs/portfolio-details-2.jpg">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="imgs/portfolio-details-3.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Project information</h2>
+                        <p><strong>Category:</strong> Web design</p>
+                        <p><strong>Client:</strong> ASU Company</p>
+                        <p><strong>Project date:</strong> 01 March, 2020</p>
+                        <p><strong>Project URL:</strong> <a href="#">www.example.com</a></p>
+                    </div>
+                    <div>
+                        <h3>This is an example of portfolio detail</h3>
+                        <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved</p>
+            <p>Designed by <span>Mohammad Sayed</span></p>
+        </footer>
+
+        <span class="to-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </span>
+
+        <div id=preloader></div>
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <script>
+            let preloader = document.getElementById("preloader");
+            if (preloader) {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        preloader.remove();
+                        document.body.style.overflowY = "auto";
+                    }, 150);
+                });
+            };
+
+            window.onscroll = () => {
+                if (this.scrollY >= 100) {
+                    document.querySelector(".to-top").style.bottom = "15px";
+                } else {
+                    document.querySelector(".to-top").style.bottom = "-50px";
+                }
+            };
+
+            document.querySelector(".to-top").addEventListener("click", function() {
+                window.scroll({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            document.querySelector(".bars").onclick = function () {
+                "use strict";
+                document.querySelector("nav ul").style.display = "flex";
+                document.body.style.overflowY = "hidden";
+            };
+
+            document.querySelector("nav ul span").addEventListener("click", () => {
+                "use strict";
+                document.querySelector("nav ul").style.display = "none";
+                document.body.style.overflowY = "auto";
+            });
+
+            new Swiper('.swiper', {
+                speed: 400,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                }
+            });
+        </script>
+    </body>
+</html>
