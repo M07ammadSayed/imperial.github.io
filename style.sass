@@ -87,7 +87,7 @@ section.landing
     background: url('imgs/hero-bg.jpg')
     background-size: cover
     background-repeat: no-repeat
-    color: $main-color
+    color: $main-color !important
     overflow: hidden
     &::before
         content: ''
@@ -128,7 +128,7 @@ section.landing
                 font-size: 25px
                 font-weight: 500
                 font-style: italic
-                border-bottom: 3px solid $accent-color
+                border-bottom: 3px solid $accent-color !important
                 cursor: default
         &:last-child
             width: 562.56px
@@ -143,15 +143,15 @@ section.landing
                 text-decoration: none
                 text-align: center
                 &:first-child
-                    background-color: $accent-color
+                    background-color: $accent-color !important
                     &:hover
                         background-color: transparent
-                        border-color: $main-color
+                        border-color: $main-color !important
                 &:last-child
                     background-color: transparent
-                    border-color: $main-color
+                    border-color: $main-color !important
                     &:hover
-                        background-color: $accent-color
+                        background-color: $accent-color !important
                         border-color: transparent
 
 @media (max-width: 991.98px)
