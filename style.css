@@ -269,19 +269,6 @@ section.landing div:last-child a:last-child:hover {
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
-  section.landing div:last-child {
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-    height: 110px;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-  }
   section.landing div:last-child a {
     font-size: 17px;
   }
