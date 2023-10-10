@@ -838,7 +838,7 @@ section.subscribe {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 60px 10px;
+  padding: 60px 20px;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(imgs/subscribe-bg.jpg) fixed center center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/subscribe-bg.jpg) fixed center center;
@@ -974,7 +974,7 @@ section.subscribe-box div.subscribe-box2 {
   padding: 50px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: 0 15px;
+  margin: 0 20px;
   border: 0;
   border-radius: 7px;
 }
@@ -1221,7 +1221,7 @@ section.portfolio div.portfolio-container div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 30px;
+  margin: 20px;
 }
 
 section.portfolio div.portfolio-container div:hover div {
