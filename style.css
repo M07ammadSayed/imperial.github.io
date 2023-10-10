@@ -1216,6 +1216,13 @@ section.portfolio div.portfolio-header p:last-child {
 
 section.portfolio div.portfolio-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
 }
 
 section.portfolio div.portfolio-container div {
@@ -1233,7 +1240,8 @@ section.portfolio div.portfolio-container div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  padding: 0;
+  margin: 20px 0;
 }
 
 section.portfolio div.portfolio-container div:hover div {
