@@ -1003,8 +1003,8 @@ section.subscribe-box div.subscribe-box2 h2::before {
 
 section.subscribe-box div.subscribe-box2 p {
   max-width: 450px;
-  -webkit-margin-after: 30px;
-          margin-block-end: 30px;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
 }
 
 section.subscribe-box div.subscribe-box2 label {
