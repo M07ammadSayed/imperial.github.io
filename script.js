@@ -183,17 +183,17 @@ function validate() {
 };
 
 document.getElementById("Subscribe").onfocus = function () {
-    document.getElementById("subscribeLabel").style.top = "54.5%";
+    document.getElementById("subscribeLabel").style.top = "56%";
     document.getElementById("subscribeLabel").style.left = "9%";
     document.getElementById("subscribeLabel").style.fontSize = "15px";
 };
 
 document.getElementById("Subscribe").onblur = function () {
-    document.getElementById("subscribeLabel").style.top = "59.5%";
+    document.getElementById("subscribeLabel").style.top = "61.5%";
     document.getElementById("subscribeLabel").style.left = "12.5%";
     document.getElementById("subscribeLabel").style.fontSize = "18px";
     if (this.value !== "") {
-        document.getElementById("subscribeLabel").style.top = "54.5%";
+        document.getElementById("subscribeLabel").style.top = "56%";
         document.getElementById("subscribeLabel").style.left = "9%";
         document.getElementById("subscribeLabel").style.fontSize = "15px";
     }
