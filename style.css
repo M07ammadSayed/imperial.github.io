@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F25657;
+  background-color: green;
   height: 67px;
 }
 
@@ -55,7 +55,7 @@ body {
 
 #preloader .lds-ripple div {
   position: absolute;
-  border: 4px solid #F25657;
+  border: 4px solid green;
   opacity: 1;
   border-radius: 50%;
   -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -209,7 +209,7 @@ section.landing div:first-of-type span {
   font-size: 25px;
   font-weight: 500;
   font-style: italic;
-  border-bottom: 3px solid #F25657;
+  border-bottom: 3px solid green;
   cursor: default;
 }
 
@@ -234,7 +234,7 @@ section.landing div:last-child a {
 }
 
 section.landing div:last-child a:first-child {
-  background-color: #F25657;
+  background-color: green;
 }
 
 section.landing div:last-child a:first-child:hover {
@@ -248,7 +248,7 @@ section.landing div:last-child a:last-child {
 }
 
 section.landing div:last-child a:last-child:hover {
-  background-color: #F25657;
+  background-color: green;
   border-color: transparent;
 }
 
@@ -303,7 +303,7 @@ section.landing div:last-child a:last-child:hover {
   }
   section.landing div:first-of-type span {
     font-size: 16px !important;
-    border-bottom: 2px solid #F25657 !important;
+    border-bottom: 2px solid green !important;
   }
   section.landing div:last-child {
     width: -webkit-fit-content !important;
@@ -387,7 +387,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #F25657;
+  color: green;
 }
 
 nav div.bars {
@@ -491,7 +491,7 @@ section.about div:first-child p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -684,7 +684,7 @@ section.services div:first-child p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -716,11 +716,11 @@ section.services div:nth-child(5), section.services div:nth-child(6), section.se
 
 section.services div:nth-child(2):hover div div, section.services div:nth-child(3):hover div div, section.services div:nth-child(4):hover div div, section.services div:nth-child(5):hover div div, section.services div:nth-child(6):hover div div, section.services div:nth-child(7):hover div div {
   background-color: #EEE;
-  border: 1px solid #F25657;
+  border: 1px solid green;
 }
 
 section.services div:nth-child(2):hover div div svg, section.services div:nth-child(3):hover div div svg, section.services div:nth-child(4):hover div div svg, section.services div:nth-child(5):hover div div svg, section.services div:nth-child(6):hover div div svg, section.services div:nth-child(7):hover div div svg {
-  color: #F25657;
+  color: green;
 }
 
 section.services div:nth-child(2) div, section.services div:nth-child(3) div, section.services div:nth-child(4) div, section.services div:nth-child(5) div, section.services div:nth-child(6) div, section.services div:nth-child(7) div {
@@ -747,7 +747,7 @@ section.services div:nth-child(2) div div, section.services div:nth-child(3) div
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
-  background-color: #F25657;
+  background-color: green;
   border-radius: 50%;
   padding: 15px;
   -webkit-margin-end: 15px;
@@ -866,7 +866,7 @@ section.subscribe div p:first-child {
   font-weight: 700;
   -webkit-margin-after: 20px;
           margin-block-end: 20px;
-  border-bottom: 3px solid #F25657;
+  border-bottom: 3px solid green;
   -webkit-padding-after: 5px;
           padding-block-end: 5px;
   color: #FCFCFC;
@@ -896,7 +896,7 @@ section.subscribe button {
 }
 
 section.subscribe button:hover {
-  background-color: #F25657;
+  background-color: green;
   border-color: transparent;
 }
 
@@ -993,7 +993,7 @@ section.subscribe-box div.subscribe-box2 h2::before {
   position: absolute;
   width: 150px;
   height: 5px;
-  background-color: #F25657;
+  background-color: green;
   bottom: -10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1036,7 +1036,7 @@ section.subscribe-box div.subscribe-box2 div input {
           transform: translateX(-50%);
   -webkit-transition: .5s;
   transition: .5s;
-  caret-color: #F25657;
+  caret-color: green;
   color: #FCFCFC;
   padding: 15px 40px 15px 15px;
   background: transparent;
@@ -1063,7 +1063,7 @@ section.subscribe-box div.subscribe-box2 div input::placeholder {
 }
 
 section.subscribe-box div.subscribe-box2 div input:focus {
-  border-bottom: 2px solid #F25657;
+  border-bottom: 2px solid green;
 }
 
 section.subscribe-box div.subscribe-box2 div span {
@@ -1085,7 +1085,7 @@ section.subscribe-box div.subscribe-box2 button {
   position: relative;
   width: 200px;
   height: 40px;
-  background-color: #F25657;
+  background-color: green;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1191,7 +1191,7 @@ section.portfolio div.portfolio-header p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -1299,7 +1299,7 @@ section.portfolio div.portfolio-container div div div a {
 }
 
 section.portfolio div.portfolio-container div div div a svg {
-  color: #F25657;
+  color: green;
   width: 20px;
   height: 20px;
 }
@@ -1334,7 +1334,7 @@ section.portfolio ul li {
 }
 
 section.portfolio ul li:hover {
-  color: #F25657;
+  color: green;
 }
 
 @media (max-width: 991.98px) {
@@ -1406,7 +1406,7 @@ section.testimonials div.testimonials-header p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -1492,7 +1492,7 @@ section.testimonials div.client-1 div:first-child div img, section.testimonials 
 }
 
 section.testimonials div.client-1 div:first-child p:first-of-type, section.testimonials div.client-2 div:first-child p:first-of-type {
-  color: #F25657;
+  color: green;
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 10px;
@@ -1627,7 +1627,7 @@ section.team div.team-header p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -1716,7 +1716,7 @@ section.team div.team-members div div:last-of-type a svg {
 }
 
 section.team div.team-members div div:last-of-type a svg:hover {
-  color: #F25657;
+  color: green;
 }
 
 section.team div.team-members div p {
@@ -1727,7 +1727,7 @@ section.team div.team-members div p {
 section.team div.team-members div p:first-of-type {
   font-size: 24px;
   font-weight: 700;
-  color: #F25657;
+  color: green;
 }
 
 section.team div.team-members div p:last-of-type {
@@ -1809,7 +1809,7 @@ section.contact div.contact-header p:first-child::before {
   height: 5px;
   bottom: 0;
   left: calc( 50% - 25px);
-  background-color: #F25657;
+  background-color: green;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: -1;
@@ -1909,7 +1909,7 @@ section.contact div.contact-details div div div:first-child {
 section.contact div.contact-details div div div:first-child svg {
   width: 32px;
   height: 32px;
-  color: #F25657;
+  color: green;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: translateZ(50px);
@@ -2005,7 +2005,7 @@ footer p:last-child {
 }
 
 footer p:last-child span {
-  color: #F25657;
+  color: green;
   font-weight: 700;
 }
 
@@ -2038,13 +2038,13 @@ span.to-top {
   cursor: pointer;
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: #F25657;
+  background-color: green;
   border-radius: 50%;
   padding: 10px;
 }
 
 span.to-top:hover {
-  background-color: #F25657;
+  background-color: green;
 }
 
 span.to-top svg.fa-angle-up {
@@ -2094,7 +2094,7 @@ section.portfolio-description div.portfolio-header {
 
 section.portfolio-description div.portfolio-header h1 {
   color: #666;
-  border-bottom: 2px solid #F25657;
+  border-bottom: 2px solid green;
 }
 
 section.portfolio-description div.portfolio-header p {
@@ -2104,7 +2104,7 @@ section.portfolio-description div.portfolio-header p {
 
 section.portfolio-description div.portfolio-header p a {
   text-decoration: none;
-  color: #F25657;
+  color: green;
 }
 
 section.portfolio-description div.container {
@@ -2156,7 +2156,7 @@ section.portfolio-description div.container div.portfolio-details-slider .swiper
   height: 12px;
   background-color: #FCFCFC;
   opacity: 1;
-  border: 1px solid #F25657;
+  border: 1px solid green;
 }
 
 section.portfolio-description div.container div:last-child {
@@ -2217,7 +2217,7 @@ section.portfolio-description div.container div:last-child div:first-child p {
 
 section.portfolio-description div.container div:last-child div:first-child p a {
   text-decoration: none;
-  color: #F25657;
+  color: green;
 }
 
 section.portfolio-description div.container div:last-child div:last-child {
@@ -2310,14 +2310,14 @@ section.portfolio-description div.container div:last-child div:last-child p {
 }
 
 .active-2 {
-  background-color: #F25657 !important;
+  background-color: green !important;
 }
 
 .active {
-  color: #F25657 !important;
+  color: green !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #F25657 !important;
+  background-color: green !important;
 }
 /*# sourceMappingURL=style.css.map */
