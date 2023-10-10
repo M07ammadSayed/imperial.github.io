@@ -1104,6 +1104,18 @@ section.subscribe-box div.subscribe-box2 button:hover {
   letter-spacing: 6px;
 }
 
+@media (max-width: 767.98px) {
+  section.subscribe-box div.subscribe-box2 {
+    padding: 20px;
+  }
+  section.subscribe-box div.subscribe-box2 h2 {
+    font-size: 30px;
+  }
+  section.subscribe-box div.subscribe-box2 p {
+    width: 100%;
+  }
+}
+
 .valid {
   background-color: #0f0 !important;
   -webkit-box-shadow: 0 0 5px #0f0,0 0 10px #0f0,0 0 20px #0f0,0 0 40px #0f0;
