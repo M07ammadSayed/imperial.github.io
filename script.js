@@ -165,4 +165,48 @@ window.addEventListener('load', () => {
     });
 })()
 
+function validate() {
+    const email = document.getElementById("Subscribe").value;
+    const ind = document.getElementById("ind");
+    const pa = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (email.match(pa)) {
+        ind.classList.add("valid");
+        ind.classList.remove("invalid");
+    } else {
+        ind.classList.remove("valid");
+        ind.classList.add("invalid");
+    }
+    if (email == "") {
+        ind.classList.remove("valid");
+        ind.classList.remove("invalid");
+    }
+};
+
+document.getElementById("Subscribe").onfocus = function () {
+    document.getElementById("subscribeLabel").style.top = "55%";
+    document.getElementById("subscribeLabel").style.left = "10%";
+    document.getElementById("subscribeLabel").style.fontSize = "15px";
+};
+
+document.getElementById("Subscribe").onblur = function () {
+    document.getElementById("subscribeLabel").style.top = "59.5%";
+    document.getElementById("subscribeLabel").style.left = "12.5%";
+    document.getElementById("subscribeLabel").style.fontSize = "18px";
+    if (this.value !== "") {
+        document.getElementById("subscribeLabel").style.top = "55%";
+        document.getElementById("subscribeLabel").style.left = "10%";
+        document.getElementById("subscribeLabel").style.fontSize = "15px";
+    }
+};
+
+document.getElementById("subscribeShow").onclick = function () {
+    document.getElementById("subscribeBox").style.opacity = "1";
+    document.getElementById("subscribeBox").style.zIndex = "9999";
+};
+
+document.getElementById("x").onclick = function () {
+    document.getElementById("subscribeBox").style.opacity = "0";
+    document.getElementById("subscribeBox").style.zIndex = "-435";
+};
+
 new WOW().init();

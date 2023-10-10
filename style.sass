@@ -547,7 +547,7 @@ section.subscribe
                 font-style: italic
                 width: 85%
                 color: #B0B3B8
-    a
+    button
         padding: 10px 20px
         border: 2px solid $main-color
         color: $main-color
@@ -555,6 +555,7 @@ section.subscribe
         transition: .5s
         text-decoration: none
         text-align: center
+        background-color: transparent
         &:hover
             background-color: $accent-color
             border-color: transparent
@@ -573,6 +574,123 @@ section.subscribe
                 &:last-child
                     margin: 0 auto !important
                     margin-block-end: 50px !important
+
+section.subscribe-box
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh
+    background-color: #121212ce
+    top: 0
+    left: 0
+    z-index: -56
+    color:#fff
+    transition: opacity .5s ease-in-out
+    opacity: 0
+    span
+        position: absolute
+        top: 20px
+        right: 20px
+        font-size: 30px
+        font-weight: bold
+        cursor: pointer
+    div.subscribe-box2
+        position: relative
+        display: flex
+        justify-content: center
+        flex-direction: column
+        background-color: #121212
+        padding: 50px
+        box-shadow: 0 .5rem 1rem rgba(black, .15)
+        margin: 0 15px
+        border: 0
+        border-radius: 7px
+        h2
+            position: relative
+            font-size: 60px
+            margin-block-end: 50px
+            font-weight: bold
+            text-align: center
+            &::before
+                content: ""
+                position: absolute
+                width: 150px
+                height: 5px
+                background-color: $accent-color
+                bottom: -10px
+                left: 50%
+                transform: translateX(-50%)
+                border-radius: 50%
+        p
+            max-width: 450px
+            margin-block-end: 30px
+        label
+            position: absolute
+            max-width: fit-content
+            font-size: 18px
+            top: 59.5%
+            left: 12.5%
+            transition: .5s
+        div
+            position: relative
+            width: 100%
+            max-height: 40px
+            margin-block-end: 50px
+            input
+                position: relative
+                width: 100%
+                height: 40px
+                left: 50%
+                transform: translateX(-50%)
+                transition: .5s
+                caret-color: $accent-color
+                color: $main-color
+                padding: 15px 40px 15px 15px
+                background: transparent
+                border-radius: 0
+                border: 2px solid transparent
+                border-bottom: 2px solid #555
+                font-size: 18px
+                &::placeholder
+                    color: $main-color
+                &:focus
+                    border-bottom: 2px solid $accent-color
+            span
+                position: absolute
+                width: 10px
+                height: 10px
+                border: 0
+                border-radius: 50%
+                right: 10px
+                top: 50%
+                background-color: #555
+                transform: translateY(-50%)
+                transition: .5s
+        button
+            position: relative
+            width: 200px
+            height: 40px
+            background-color: $accent-color
+            left: 50%
+            transform: translateX(-50%)
+            border: 0
+            border-radius: 7px
+            color: $main-color
+            text-transform: uppercase
+            letter-spacing: 1px
+            transition: .5s
+            &:hover
+                filter: brightness(.7)
+                letter-spacing: 6px
+
+.valid
+    background-color: #0f0 !important
+    box-shadow: 0 0 5px #0f0,0 0 10px #0f0,0 0 20px #0f0,0 0 40px #0f0
+.invalid
+    background-color: #f00 !important
+    box-shadow: 0 0 5px #f00,0 0 10px #f00,0 0 20px #f00,0 0 40px #f00
 
 section.portfolio
     position: relative
