@@ -961,7 +961,7 @@ section.subscribe-box div.subscribe-box2 {
   padding: 50px;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: 0 20px;
+  margin: 0 10px;
   border: 0;
   border-radius: 7px;
 }
@@ -1096,7 +1096,7 @@ section.subscribe-box div.subscribe-box2 button:hover {
     padding: 20px;
   }
   section.subscribe-box div.subscribe-box2 h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   section.subscribe-box div.subscribe-box2 p {
     width: 100%;
